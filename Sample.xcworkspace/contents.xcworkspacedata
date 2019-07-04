@@ -4,17 +4,29 @@
    <Group
       location = "container:"
       name = "Shared">
+      <FileRef
+         location = "group:Shared/Shared.xcodeproj">
+      </FileRef>
    </Group>
    <Group
       location = "container:"
       name = "Core">
+      <FileRef
+         location = "group:AppCore/AppCore.xcodeproj">
+      </FileRef>
    </Group>
    <Group
       location = "container:"
       name = "Features">
+      <FileRef
+         location = "group:PersonsFeature/PersonsFeature.xcodeproj">
+      </FileRef>
    </Group>
    <Group
       location = "container:"
       name = "UI">
+      <FileRef
+         location = "group:SampleApp/SampleApp.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>
