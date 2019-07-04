@@ -61,6 +61,9 @@
 		276ECA4122CDEE2900D9B822 /* Concat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA3922CDEE2900D9B822 /* Concat.swift */; };
 		276ECA4222CDEE2900D9B822 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA3A22CDEE2900D9B822 /* Compose.swift */; };
 		276ECA4322CDEE2900D9B822 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA3B22CDEE2900D9B822 /* Curry.swift */; };
+		276ECA6122CDF85B00D9B822 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA6022CDF85B00D9B822 /* Box.swift */; };
+		276ECA6A22CDFBC600D9B822 /* WeakBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA6922CDFBC600D9B822 /* WeakBox.swift */; };
+		276ECA6C22CDFBF000D9B822 /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA6B22CDFBF000D9B822 /* PublishSubject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +143,9 @@
 		276ECA3922CDEE2900D9B822 /* Concat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concat.swift; sourceTree = "<group>"; };
 		276ECA3A22CDEE2900D9B822 /* Compose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compose.swift; sourceTree = "<group>"; };
 		276ECA3B22CDEE2900D9B822 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
+		276ECA6022CDF85B00D9B822 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		276ECA6922CDFBC600D9B822 /* WeakBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakBox.swift; sourceTree = "<group>"; };
+		276ECA6B22CDFBF000D9B822 /* PublishSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishSubject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,6 +373,9 @@
 			children = (
 				276ECA3122CDE75B00D9B822 /* Cancellable */,
 				276ECA2F22CDE74900D9B822 /* Once.swift */,
+				276ECA6022CDF85B00D9B822 /* Box.swift */,
+				276ECA6922CDFBC600D9B822 /* WeakBox.swift */,
+				276ECA6B22CDFBF000D9B822 /* PublishSubject.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -511,6 +520,7 @@
 				276ECA1C22CDDFCA00D9B822 /* NonEmpty+Collection.swift in Sources */,
 				276ECA3022CDE74900D9B822 /* Once.swift in Sources */,
 				276EC9F422CDD89F00D9B822 /* TaggedMoney.swift in Sources */,
+				276ECA6A22CDFBC600D9B822 /* WeakBox.swift in Sources */,
 				276ECA1822CDDFCA00D9B822 /* NonEmpty+Random.swift in Sources */,
 				276EC9E122CDD89F00D9B822 /* AsyncType+ResultType.swift in Sources */,
 				276ECA3D22CDEE2900D9B822 /* Optional.swift in Sources */,
@@ -526,6 +536,7 @@
 				276ECA3E22CDEE2900D9B822 /* Uncurry.swift in Sources */,
 				276EC9F922CDD9B600D9B822 /* Either.swift in Sources */,
 				276ECA4222CDEE2900D9B822 /* Compose.swift in Sources */,
+				276ECA6C22CDFBF000D9B822 /* PublishSubject.swift in Sources */,
 				276ECA1F22CDDFCA00D9B822 /* NonEmpty+RandomAccessCollection.swift in Sources */,
 				276EC9FB22CDDBA900D9B822 /* Never.swift in Sources */,
 				276EC9F322CDD89F00D9B822 /* Tagged.swift in Sources */,
@@ -546,6 +557,7 @@
 				276EC9E822CDD89F00D9B822 /* Promise.swift in Sources */,
 				276ECA4322CDEE2900D9B822 /* Curry.swift in Sources */,
 				276EC9E022CDD89F00D9B822 /* AsyncType.swift in Sources */,
+				276ECA6122CDF85B00D9B822 /* Box.swift in Sources */,
 				276ECA3322CDE77100D9B822 /* Cancellable.swift in Sources */,
 				276EC9F222CDD89F00D9B822 /* TaggedTime.swift in Sources */,
 				276ECA2122CDDFCA00D9B822 /* NonEmpty+BidirectionalCollection.swift in Sources */,
