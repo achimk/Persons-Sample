@@ -10,6 +10,43 @@
 		276EC90022CDD48600D9B822 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276EC8F622CDD48600D9B822 /* Shared.framework */; };
 		276EC90522CDD48600D9B822 /* SharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC90422CDD48600D9B822 /* SharedTests.swift */; };
 		276EC90722CDD48600D9B822 /* Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 276EC8F922CDD48600D9B822 /* Shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		276EC9DE22CDD89F00D9B822 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9C022CDD89F00D9B822 /* ResultProtocol.swift */; };
+		276EC9DF22CDD89F00D9B822 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9C122CDD89F00D9B822 /* Future.swift */; };
+		276EC9E022CDD89F00D9B822 /* AsyncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9C222CDD89F00D9B822 /* AsyncType.swift */; };
+		276EC9E122CDD89F00D9B822 /* AsyncType+ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9C322CDD89F00D9B822 /* AsyncType+ResultType.swift */; };
+		276EC9E222CDD89F00D9B822 /* ExecutionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9C422CDD89F00D9B822 /* ExecutionContext.swift */; };
+		276EC9E322CDD89F00D9B822 /* Result+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9C522CDD89F00D9B822 /* Result+BrightFutures.swift */; };
+		276EC9E422CDD89F00D9B822 /* MutableAsyncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9C622CDD89F00D9B822 /* MutableAsyncType.swift */; };
+		276EC9E522CDD89F00D9B822 /* NSOperationQueue+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9C722CDD89F00D9B822 /* NSOperationQueue+BrightFutures.swift */; };
+		276EC9E622CDD89F00D9B822 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9C822CDD89F00D9B822 /* Async.swift */; };
+		276EC9E722CDD89F00D9B822 /* Dispatch+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9C922CDD89F00D9B822 /* Dispatch+BrightFutures.swift */; };
+		276EC9E822CDD89F00D9B822 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9CA22CDD89F00D9B822 /* Promise.swift */; };
+		276EC9E922CDD89F00D9B822 /* SequenceType+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9CB22CDD89F00D9B822 /* SequenceType+BrightFutures.swift */; };
+		276EC9EA22CDD89F00D9B822 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9CC22CDD89F00D9B822 /* Errors.swift */; };
+		276EC9EB22CDD89F00D9B822 /* AsyncType+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9CD22CDD89F00D9B822 /* AsyncType+Debug.swift */; };
+		276EC9EC22CDD89F00D9B822 /* InvalidationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9CE22CDD89F00D9B822 /* InvalidationToken.swift */; };
+		276EC9ED22CDD89F00D9B822 /* MutableAsyncType+ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9CF22CDD89F00D9B822 /* MutableAsyncType+ResultType.swift */; };
+		276EC9F222CDD89F00D9B822 /* TaggedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9D722CDD89F00D9B822 /* TaggedTime.swift */; };
+		276EC9F322CDD89F00D9B822 /* Tagged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9D922CDD89F00D9B822 /* Tagged.swift */; };
+		276EC9F422CDD89F00D9B822 /* TaggedMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9DB22CDD89F00D9B822 /* TaggedMoney.swift */; };
+		276EC9F722CDD97B00D9B822 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9F622CDD97B00D9B822 /* Result.swift */; };
+		276EC9F922CDD9B600D9B822 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9F822CDD9B600D9B822 /* Either.swift */; };
+		276EC9FB22CDDBA900D9B822 /* Never.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9FA22CDDBA900D9B822 /* Never.swift */; };
+		276EC9FE22CDDCCC00D9B822 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9FD22CDDCCC00D9B822 /* Pair.swift */; };
+		276ECA0022CDDCDC00D9B822 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC9FF22CDDCDC00D9B822 /* Sort.swift */; };
+		276ECA0222CDDD0300D9B822 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA0122CDDD0300D9B822 /* Filter.swift */; };
+		276ECA1622CDDFCA00D9B822 /* NonEmpty+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA0722CDDFCA00D9B822 /* NonEmpty+Dictionary.swift */; };
+		276ECA1722CDDFCA00D9B822 /* NonEmpty+SetAlgebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA0822CDDFCA00D9B822 /* NonEmpty+SetAlgebra.swift */; };
+		276ECA1822CDDFCA00D9B822 /* NonEmpty+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA0922CDDFCA00D9B822 /* NonEmpty+Random.swift */; };
+		276ECA1922CDDFCA00D9B822 /* NonEmpty+MutableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA0A22CDDFCA00D9B822 /* NonEmpty+MutableCollection.swift */; };
+		276ECA1A22CDDFCA00D9B822 /* NonEmpty+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA0B22CDDFCA00D9B822 /* NonEmpty+String.swift */; };
+		276ECA1B22CDDFCA00D9B822 /* NonEmpty+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA0C22CDDFCA00D9B822 /* NonEmpty+Comparable.swift */; };
+		276ECA1C22CDDFCA00D9B822 /* NonEmpty+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA0D22CDDFCA00D9B822 /* NonEmpty+Collection.swift */; };
+		276ECA1D22CDDFCA00D9B822 /* NonEmpty+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA0E22CDDFCA00D9B822 /* NonEmpty+Array.swift */; };
+		276ECA1E22CDDFCA00D9B822 /* NonEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA0F22CDDFCA00D9B822 /* NonEmpty.swift */; };
+		276ECA1F22CDDFCA00D9B822 /* NonEmpty+RandomAccessCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA1022CDDFCA00D9B822 /* NonEmpty+RandomAccessCollection.swift */; };
+		276ECA2022CDDFCA00D9B822 /* NonEmpty+RangeReplaceableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA1122CDDFCA00D9B822 /* NonEmpty+RangeReplaceableCollection.swift */; };
+		276ECA2122CDDFCA00D9B822 /* NonEmpty+BidirectionalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA1222CDDFCA00D9B822 /* NonEmpty+BidirectionalCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +66,52 @@
 		276EC8FF22CDD48600D9B822 /* SharedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		276EC90422CDD48600D9B822 /* SharedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTests.swift; sourceTree = "<group>"; };
 		276EC90622CDD48600D9B822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		276EC9BC22CDD89F00D9B822 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		276EC9BD22CDD89F00D9B822 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		276EC9C022CDD89F00D9B822 /* ResultProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
+		276EC9C122CDD89F00D9B822 /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		276EC9C222CDD89F00D9B822 /* AsyncType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncType.swift; sourceTree = "<group>"; };
+		276EC9C322CDD89F00D9B822 /* AsyncType+ResultType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AsyncType+ResultType.swift"; sourceTree = "<group>"; };
+		276EC9C422CDD89F00D9B822 /* ExecutionContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecutionContext.swift; sourceTree = "<group>"; };
+		276EC9C522CDD89F00D9B822 /* Result+BrightFutures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+BrightFutures.swift"; sourceTree = "<group>"; };
+		276EC9C622CDD89F00D9B822 /* MutableAsyncType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableAsyncType.swift; sourceTree = "<group>"; };
+		276EC9C722CDD89F00D9B822 /* NSOperationQueue+BrightFutures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSOperationQueue+BrightFutures.swift"; sourceTree = "<group>"; };
+		276EC9C822CDD89F00D9B822 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		276EC9C922CDD89F00D9B822 /* Dispatch+BrightFutures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dispatch+BrightFutures.swift"; sourceTree = "<group>"; };
+		276EC9CA22CDD89F00D9B822 /* Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		276EC9CB22CDD89F00D9B822 /* SequenceType+BrightFutures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SequenceType+BrightFutures.swift"; sourceTree = "<group>"; };
+		276EC9CC22CDD89F00D9B822 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		276EC9CD22CDD89F00D9B822 /* AsyncType+Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AsyncType+Debug.swift"; sourceTree = "<group>"; };
+		276EC9CE22CDD89F00D9B822 /* InvalidationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvalidationToken.swift; sourceTree = "<group>"; };
+		276EC9CF22CDD89F00D9B822 /* MutableAsyncType+ResultType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableAsyncType+ResultType.swift"; sourceTree = "<group>"; };
+		276EC9D022CDD89F00D9B822 /* Podfile version 8.0.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "Podfile version 8.0.1"; sourceTree = "<group>"; };
+		276EC9D222CDD89F00D9B822 /* Podfile version 0.4.0 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Podfile version 0.4.0"; sourceTree = "<group>"; };
+		276EC9D322CDD89F00D9B822 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		276EC9D422CDD89F00D9B822 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		276EC9D722CDD89F00D9B822 /* TaggedTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaggedTime.swift; sourceTree = "<group>"; };
+		276EC9D922CDD89F00D9B822 /* Tagged.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tagged.swift; sourceTree = "<group>"; };
+		276EC9DB22CDD89F00D9B822 /* TaggedMoney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaggedMoney.swift; sourceTree = "<group>"; };
+		276EC9F622CDD97B00D9B822 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		276EC9F822CDD9B600D9B822 /* Either.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
+		276EC9FA22CDDBA900D9B822 /* Never.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Never.swift; sourceTree = "<group>"; };
+		276EC9FD22CDDCCC00D9B822 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
+		276EC9FF22CDDCDC00D9B822 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		276ECA0122CDDD0300D9B822 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		276ECA0422CDDFCA00D9B822 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		276ECA0522CDDFCA00D9B822 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		276ECA0722CDDFCA00D9B822 /* NonEmpty+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+Dictionary.swift"; sourceTree = "<group>"; };
+		276ECA0822CDDFCA00D9B822 /* NonEmpty+SetAlgebra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+SetAlgebra.swift"; sourceTree = "<group>"; };
+		276ECA0922CDDFCA00D9B822 /* NonEmpty+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+Random.swift"; sourceTree = "<group>"; };
+		276ECA0A22CDDFCA00D9B822 /* NonEmpty+MutableCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+MutableCollection.swift"; sourceTree = "<group>"; };
+		276ECA0B22CDDFCA00D9B822 /* NonEmpty+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+String.swift"; sourceTree = "<group>"; };
+		276ECA0C22CDDFCA00D9B822 /* NonEmpty+Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+Comparable.swift"; sourceTree = "<group>"; };
+		276ECA0D22CDDFCA00D9B822 /* NonEmpty+Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+Collection.swift"; sourceTree = "<group>"; };
+		276ECA0E22CDDFCA00D9B822 /* NonEmpty+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+Array.swift"; sourceTree = "<group>"; };
+		276ECA0F22CDDFCA00D9B822 /* NonEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonEmpty.swift; sourceTree = "<group>"; };
+		276ECA1022CDDFCA00D9B822 /* NonEmpty+RandomAccessCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+RandomAccessCollection.swift"; sourceTree = "<group>"; };
+		276ECA1122CDDFCA00D9B822 /* NonEmpty+RangeReplaceableCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+RangeReplaceableCollection.swift"; sourceTree = "<group>"; };
+		276ECA1222CDDFCA00D9B822 /* NonEmpty+BidirectionalCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NonEmpty+BidirectionalCollection.swift"; sourceTree = "<group>"; };
+		276ECA1322CDDFCA00D9B822 /* Podfile version 0.2.0 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Podfile version 0.2.0"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +154,9 @@
 		276EC8F822CDD48600D9B822 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				276EC9FC22CDDCC100D9B822 /* Types */,
+				276EC9F522CDD8EB00D9B822 /* Primitives */,
+				276EC9B622CDD7E100D9B822 /* Libraries */,
 				276EC8F922CDD48600D9B822 /* Shared.h */,
 				276EC8FA22CDD48600D9B822 /* Info.plist */,
 			);
@@ -84,6 +170,153 @@
 				276EC90622CDD48600D9B822 /* Info.plist */,
 			);
 			path = SharedTests;
+			sourceTree = "<group>";
+		};
+		276EC9B622CDD7E100D9B822 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				276ECA0322CDDFCA00D9B822 /* NonEmpty */,
+				276EC9BB22CDD89F00D9B822 /* BrightFutures */,
+				276EC9D122CDD89F00D9B822 /* Tagged */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		276EC9BB22CDD89F00D9B822 /* BrightFutures */ = {
+			isa = PBXGroup;
+			children = (
+				276EC9D022CDD89F00D9B822 /* Podfile version 8.0.1 */,
+				276EC9BC22CDD89F00D9B822 /* LICENSE */,
+				276EC9BD22CDD89F00D9B822 /* README.md */,
+				276EC9BE22CDD89F00D9B822 /* Sources */,
+			);
+			path = BrightFutures;
+			sourceTree = "<group>";
+		};
+		276EC9BE22CDD89F00D9B822 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				276EC9BF22CDD89F00D9B822 /* BrightFutures */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		276EC9BF22CDD89F00D9B822 /* BrightFutures */ = {
+			isa = PBXGroup;
+			children = (
+				276EC9C022CDD89F00D9B822 /* ResultProtocol.swift */,
+				276EC9C122CDD89F00D9B822 /* Future.swift */,
+				276EC9C222CDD89F00D9B822 /* AsyncType.swift */,
+				276EC9C322CDD89F00D9B822 /* AsyncType+ResultType.swift */,
+				276EC9C422CDD89F00D9B822 /* ExecutionContext.swift */,
+				276EC9C522CDD89F00D9B822 /* Result+BrightFutures.swift */,
+				276EC9C622CDD89F00D9B822 /* MutableAsyncType.swift */,
+				276EC9C722CDD89F00D9B822 /* NSOperationQueue+BrightFutures.swift */,
+				276EC9C822CDD89F00D9B822 /* Async.swift */,
+				276EC9C922CDD89F00D9B822 /* Dispatch+BrightFutures.swift */,
+				276EC9CA22CDD89F00D9B822 /* Promise.swift */,
+				276EC9CB22CDD89F00D9B822 /* SequenceType+BrightFutures.swift */,
+				276EC9CC22CDD89F00D9B822 /* Errors.swift */,
+				276EC9CD22CDD89F00D9B822 /* AsyncType+Debug.swift */,
+				276EC9CE22CDD89F00D9B822 /* InvalidationToken.swift */,
+				276EC9CF22CDD89F00D9B822 /* MutableAsyncType+ResultType.swift */,
+			);
+			path = BrightFutures;
+			sourceTree = "<group>";
+		};
+		276EC9D122CDD89F00D9B822 /* Tagged */ = {
+			isa = PBXGroup;
+			children = (
+				276EC9D222CDD89F00D9B822 /* Podfile version 0.4.0 */,
+				276EC9D322CDD89F00D9B822 /* LICENSE */,
+				276EC9D422CDD89F00D9B822 /* README.md */,
+				276EC9D522CDD89F00D9B822 /* Sources */,
+			);
+			path = Tagged;
+			sourceTree = "<group>";
+		};
+		276EC9D522CDD89F00D9B822 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				276EC9D622CDD89F00D9B822 /* TaggedTime */,
+				276EC9D822CDD89F00D9B822 /* Tagged */,
+				276EC9DA22CDD89F00D9B822 /* TaggedMoney */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		276EC9D622CDD89F00D9B822 /* TaggedTime */ = {
+			isa = PBXGroup;
+			children = (
+				276EC9D722CDD89F00D9B822 /* TaggedTime.swift */,
+			);
+			path = TaggedTime;
+			sourceTree = "<group>";
+		};
+		276EC9D822CDD89F00D9B822 /* Tagged */ = {
+			isa = PBXGroup;
+			children = (
+				276EC9D922CDD89F00D9B822 /* Tagged.swift */,
+			);
+			path = Tagged;
+			sourceTree = "<group>";
+		};
+		276EC9DA22CDD89F00D9B822 /* TaggedMoney */ = {
+			isa = PBXGroup;
+			children = (
+				276EC9DB22CDD89F00D9B822 /* TaggedMoney.swift */,
+			);
+			path = TaggedMoney;
+			sourceTree = "<group>";
+		};
+		276EC9F522CDD8EB00D9B822 /* Primitives */ = {
+			isa = PBXGroup;
+			children = (
+				276EC9F622CDD97B00D9B822 /* Result.swift */,
+				276EC9F822CDD9B600D9B822 /* Either.swift */,
+				276EC9FA22CDDBA900D9B822 /* Never.swift */,
+			);
+			path = Primitives;
+			sourceTree = "<group>";
+		};
+		276EC9FC22CDDCC100D9B822 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				276EC9FD22CDDCCC00D9B822 /* Pair.swift */,
+				276EC9FF22CDDCDC00D9B822 /* Sort.swift */,
+				276ECA0122CDDD0300D9B822 /* Filter.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		276ECA0322CDDFCA00D9B822 /* NonEmpty */ = {
+			isa = PBXGroup;
+			children = (
+				276ECA1322CDDFCA00D9B822 /* Podfile version 0.2.0 */,
+				276ECA0422CDDFCA00D9B822 /* LICENSE */,
+				276ECA0522CDDFCA00D9B822 /* README.md */,
+				276ECA0622CDDFCA00D9B822 /* Sources */,
+			);
+			path = NonEmpty;
+			sourceTree = "<group>";
+		};
+		276ECA0622CDDFCA00D9B822 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				276ECA0722CDDFCA00D9B822 /* NonEmpty+Dictionary.swift */,
+				276ECA0822CDDFCA00D9B822 /* NonEmpty+SetAlgebra.swift */,
+				276ECA0922CDDFCA00D9B822 /* NonEmpty+Random.swift */,
+				276ECA0A22CDDFCA00D9B822 /* NonEmpty+MutableCollection.swift */,
+				276ECA0B22CDDFCA00D9B822 /* NonEmpty+String.swift */,
+				276ECA0C22CDDFCA00D9B822 /* NonEmpty+Comparable.swift */,
+				276ECA0D22CDDFCA00D9B822 /* NonEmpty+Collection.swift */,
+				276ECA0E22CDDFCA00D9B822 /* NonEmpty+Array.swift */,
+				276ECA0F22CDDFCA00D9B822 /* NonEmpty.swift */,
+				276ECA1022CDDFCA00D9B822 /* NonEmpty+RandomAccessCollection.swift */,
+				276ECA1122CDDFCA00D9B822 /* NonEmpty+RangeReplaceableCollection.swift */,
+				276ECA1222CDDFCA00D9B822 /* NonEmpty+BidirectionalCollection.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +427,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276EC9DF22CDD89F00D9B822 /* Future.swift in Sources */,
+				276ECA0222CDDD0300D9B822 /* Filter.swift in Sources */,
+				276EC9E222CDD89F00D9B822 /* ExecutionContext.swift in Sources */,
+				276ECA1622CDDFCA00D9B822 /* NonEmpty+Dictionary.swift in Sources */,
+				276EC9E722CDD89F00D9B822 /* Dispatch+BrightFutures.swift in Sources */,
+				276ECA1C22CDDFCA00D9B822 /* NonEmpty+Collection.swift in Sources */,
+				276EC9F422CDD89F00D9B822 /* TaggedMoney.swift in Sources */,
+				276ECA1822CDDFCA00D9B822 /* NonEmpty+Random.swift in Sources */,
+				276EC9E122CDD89F00D9B822 /* AsyncType+ResultType.swift in Sources */,
+				276ECA0022CDDCDC00D9B822 /* Sort.swift in Sources */,
+				276ECA1722CDDFCA00D9B822 /* NonEmpty+SetAlgebra.swift in Sources */,
+				276EC9E422CDD89F00D9B822 /* MutableAsyncType.swift in Sources */,
+				276EC9F722CDD97B00D9B822 /* Result.swift in Sources */,
+				276EC9F922CDD9B600D9B822 /* Either.swift in Sources */,
+				276ECA1F22CDDFCA00D9B822 /* NonEmpty+RandomAccessCollection.swift in Sources */,
+				276EC9FB22CDDBA900D9B822 /* Never.swift in Sources */,
+				276EC9F322CDD89F00D9B822 /* Tagged.swift in Sources */,
+				276ECA1B22CDDFCA00D9B822 /* NonEmpty+Comparable.swift in Sources */,
+				276EC9E622CDD89F00D9B822 /* Async.swift in Sources */,
+				276ECA1922CDDFCA00D9B822 /* NonEmpty+MutableCollection.swift in Sources */,
+				276EC9ED22CDD89F00D9B822 /* MutableAsyncType+ResultType.swift in Sources */,
+				276EC9E922CDD89F00D9B822 /* SequenceType+BrightFutures.swift in Sources */,
+				276EC9EA22CDD89F00D9B822 /* Errors.swift in Sources */,
+				276EC9FE22CDDCCC00D9B822 /* Pair.swift in Sources */,
+				276ECA1E22CDDFCA00D9B822 /* NonEmpty.swift in Sources */,
+				276EC9EB22CDD89F00D9B822 /* AsyncType+Debug.swift in Sources */,
+				276ECA1A22CDDFCA00D9B822 /* NonEmpty+String.swift in Sources */,
+				276EC9E322CDD89F00D9B822 /* Result+BrightFutures.swift in Sources */,
+				276EC9EC22CDD89F00D9B822 /* InvalidationToken.swift in Sources */,
+				276EC9DE22CDD89F00D9B822 /* ResultProtocol.swift in Sources */,
+				276EC9E822CDD89F00D9B822 /* Promise.swift in Sources */,
+				276EC9E022CDD89F00D9B822 /* AsyncType.swift in Sources */,
+				276EC9F222CDD89F00D9B822 /* TaggedTime.swift in Sources */,
+				276ECA2122CDDFCA00D9B822 /* NonEmpty+BidirectionalCollection.swift in Sources */,
+				276ECA1D22CDDFCA00D9B822 /* NonEmpty+Array.swift in Sources */,
+				276ECA2022CDDFCA00D9B822 /* NonEmpty+RangeReplaceableCollection.swift in Sources */,
+				276EC9E522CDD89F00D9B822 /* NSOperationQueue+BrightFutures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +659,7 @@
 		276EC90E22CDD48600D9B822 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SharedTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +677,7 @@
 		276EC90F22CDD48600D9B822 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SharedTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
