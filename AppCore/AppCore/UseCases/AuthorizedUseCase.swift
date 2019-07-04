@@ -35,7 +35,7 @@ final class AuthorizedUseCase<T> {
         let ifInvalidAccess: (Swift.Error) -> Bool = {
             if let error = $0 as? ApplicationError {
                 switch error {
-                case .accessDenied, .authorizationRevoked: return true
+                case .accessDenied, .accessRevoked: return true
                 default: return false
                 }
             }

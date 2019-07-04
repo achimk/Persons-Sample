@@ -12,7 +12,7 @@ public enum ApplicationError: Swift.Error {
     
     case accessDenied
     
-    case authorizationRevoked
+    case accessRevoked
     
     case connectionErrorOccured
     

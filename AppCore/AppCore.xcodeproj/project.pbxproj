@@ -24,6 +24,7 @@
 		276ECA6822CDFAD000D9B822 /* EventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA6722CDFAD000D9B822 /* EventListener.swift */; };
 		276ECA6E22CDFD1800D9B822 /* ApplicationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA6D22CDFD1800D9B822 /* ApplicationContainer.swift */; };
 		276ECA7022CE027900D9B822 /* DebugUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA6F22CE027900D9B822 /* DebugUseCase.swift */; };
+		276ECAAC22CE23C300D9B822 /* UseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECAAB22CE23C300D9B822 /* UseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		276ECA6722CDFAD000D9B822 /* EventListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListener.swift; sourceTree = "<group>"; };
 		276ECA6D22CDFD1800D9B822 /* ApplicationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationContainer.swift; sourceTree = "<group>"; };
 		276ECA6F22CE027900D9B822 /* DebugUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugUseCase.swift; sourceTree = "<group>"; };
+		276ECAAB22CE23C300D9B822 /* UseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		276EC94B22CDD55700D9B822 /* AppCoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				276ECAAA22CE237400D9B822 /* UseCases */,
 				276EC94C22CDD55700D9B822 /* AppCoreTests.swift */,
 				276EC94E22CDD55700D9B822 /* Info.plist */,
 			);
@@ -175,6 +178,14 @@
 				276ECA6D22CDFD1800D9B822 /* ApplicationContainer.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		276ECAAA22CE237400D9B822 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				276ECAAB22CE23C300D9B822 /* UseCaseTests.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				276EC94D22CDD55700D9B822 /* AppCoreTests.swift in Sources */,
+				276ECAAC22CE23C300D9B822 /* UseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
