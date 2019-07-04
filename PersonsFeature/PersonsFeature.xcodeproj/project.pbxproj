@@ -10,6 +10,27 @@
 		276EC96C22CDD57A00D9B822 /* PersonsFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276EC96222CDD57A00D9B822 /* PersonsFeature.framework */; };
 		276EC97122CDD57A00D9B822 /* PersonsFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC97022CDD57A00D9B822 /* PersonsFeatureTests.swift */; };
 		276EC97322CDD57A00D9B822 /* PersonsFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 276EC96522CDD57A00D9B822 /* PersonsFeature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		276ECA7722CE0BD900D9B822 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA7622CE0BD900D9B822 /* Person.swift */; };
+		276ECA7922CE0BE600D9B822 /* UnvalidatedPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA7822CE0BE600D9B822 /* UnvalidatedPerson.swift */; };
+		276ECA7B22CE0BEF00D9B822 /* ValidatedPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA7A22CE0BEF00D9B822 /* ValidatedPerson.swift */; };
+		276ECA7F22CE0C3200D9B822 /* GetPersonsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA7E22CE0C3200D9B822 /* GetPersonsUseCase.swift */; };
+		276ECA8222CE0C4C00D9B822 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276ECA8122CE0C4C00D9B822 /* Shared.framework */; };
+		276ECA8422CE0C8F00D9B822 /* GetPersonDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA8322CE0C8F00D9B822 /* GetPersonDetailsUseCase.swift */; };
+		276ECA8622CE0CBE00D9B822 /* CreatePersonUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA8522CE0CBE00D9B822 /* CreatePersonUseCase.swift */; };
+		276ECA8822CE0CD200D9B822 /* UpdatePersonUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA8722CE0CD200D9B822 /* UpdatePersonUseCase.swift */; };
+		276ECA8A22CE0CE300D9B822 /* DeletePersonUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA8922CE0CE300D9B822 /* DeletePersonUseCase.swift */; };
+		276ECA9122CE0D6B00D9B822 /* PersonsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA9022CE0D6B00D9B822 /* PersonsInteractor.swift */; };
+		276ECA9322CE0D8900D9B822 /* PersonsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA9222CE0D8900D9B822 /* PersonsAPI.swift */; };
+		276ECA9522CE0EA100D9B822 /* UpdatePersonGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA9422CE0EA100D9B822 /* UpdatePersonGateway.swift */; };
+		276ECA9722CE0EF500D9B822 /* PersonsInteractorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA9622CE0EF500D9B822 /* PersonsInteractorContainer.swift */; };
+		276ECA9922CE0F1E00D9B822 /* DeletePersonGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA9822CE0F1D00D9B822 /* DeletePersonGateway.swift */; };
+		276ECA9B22CE0F4C00D9B822 /* CreatePersonGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA9A22CE0F4C00D9B822 /* CreatePersonGateway.swift */; };
+		276ECA9D22CE103E00D9B822 /* PersonEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECA9C22CE103E00D9B822 /* PersonEvent.swift */; };
+		276ECAA122CE140000D9B822 /* AppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276ECAA022CE140000D9B822 /* AppCore.framework */; };
+		276ECAA322CE14D900D9B822 /* PersonValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECAA222CE14D900D9B822 /* PersonValidator.swift */; };
+		276ECAA522CE1A5300D9B822 /* GetPersonDetailsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECAA422CE1A5300D9B822 /* GetPersonDetailsGateway.swift */; };
+		276ECAA722CE1C5E00D9B822 /* GetPersonsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECAA622CE1C5E00D9B822 /* GetPersonsGateway.swift */; };
+		276ECAA922CE1F7300D9B822 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECAA822CE1F7300D9B822 /* Email.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +50,27 @@
 		276EC96B22CDD57A00D9B822 /* PersonsFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonsFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		276EC97022CDD57A00D9B822 /* PersonsFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsFeatureTests.swift; sourceTree = "<group>"; };
 		276EC97222CDD57A00D9B822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		276ECA7622CE0BD900D9B822 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		276ECA7822CE0BE600D9B822 /* UnvalidatedPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnvalidatedPerson.swift; sourceTree = "<group>"; };
+		276ECA7A22CE0BEF00D9B822 /* ValidatedPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatedPerson.swift; sourceTree = "<group>"; };
+		276ECA7E22CE0C3200D9B822 /* GetPersonsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonsUseCase.swift; sourceTree = "<group>"; };
+		276ECA8122CE0C4C00D9B822 /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		276ECA8322CE0C8F00D9B822 /* GetPersonDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonDetailsUseCase.swift; sourceTree = "<group>"; };
+		276ECA8522CE0CBE00D9B822 /* CreatePersonUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePersonUseCase.swift; sourceTree = "<group>"; };
+		276ECA8722CE0CD200D9B822 /* UpdatePersonUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonUseCase.swift; sourceTree = "<group>"; };
+		276ECA8922CE0CE300D9B822 /* DeletePersonUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePersonUseCase.swift; sourceTree = "<group>"; };
+		276ECA9022CE0D6B00D9B822 /* PersonsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsInteractor.swift; sourceTree = "<group>"; };
+		276ECA9222CE0D8900D9B822 /* PersonsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsAPI.swift; sourceTree = "<group>"; };
+		276ECA9422CE0EA100D9B822 /* UpdatePersonGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonGateway.swift; sourceTree = "<group>"; };
+		276ECA9622CE0EF500D9B822 /* PersonsInteractorContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsInteractorContainer.swift; sourceTree = "<group>"; };
+		276ECA9822CE0F1D00D9B822 /* DeletePersonGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePersonGateway.swift; sourceTree = "<group>"; };
+		276ECA9A22CE0F4C00D9B822 /* CreatePersonGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePersonGateway.swift; sourceTree = "<group>"; };
+		276ECA9C22CE103E00D9B822 /* PersonEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonEvent.swift; sourceTree = "<group>"; };
+		276ECAA022CE140000D9B822 /* AppCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		276ECAA222CE14D900D9B822 /* PersonValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonValidator.swift; sourceTree = "<group>"; };
+		276ECAA422CE1A5300D9B822 /* GetPersonDetailsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonDetailsGateway.swift; sourceTree = "<group>"; };
+		276ECAA622CE1C5E00D9B822 /* GetPersonsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonsGateway.swift; sourceTree = "<group>"; };
+		276ECAA822CE1F7300D9B822 /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276ECAA122CE140000D9B822 /* AppCore.framework in Frameworks */,
+				276ECA8222CE0C4C00D9B822 /* Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +100,7 @@
 				276EC96422CDD57A00D9B822 /* PersonsFeature */,
 				276EC96F22CDD57A00D9B822 /* PersonsFeatureTests */,
 				276EC96322CDD57A00D9B822 /* Products */,
+				276ECA8022CE0C4C00D9B822 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +116,11 @@
 		276EC96422CDD57A00D9B822 /* PersonsFeature */ = {
 			isa = PBXGroup;
 			children = (
+				276ECA7522CE0B9800D9B822 /* Domain */,
+				276ECA7422CE0B9200D9B822 /* UseCases */,
+				276ECA7322CE0B7700D9B822 /* Interaction */,
+				276ECA7222CE0B7000D9B822 /* Presentation */,
+				276ECA7122CE0B6400D9B822 /* Infrastructure */,
 				276EC96522CDD57A00D9B822 /* PersonsFeature.h */,
 				276EC96622CDD57A00D9B822 /* Info.plist */,
 			);
@@ -84,6 +134,125 @@
 				276EC97222CDD57A00D9B822 /* Info.plist */,
 			);
 			path = PersonsFeatureTests;
+			sourceTree = "<group>";
+		};
+		276ECA7122CE0B6400D9B822 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		276ECA7222CE0B7000D9B822 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		276ECA7322CE0B7700D9B822 /* Interaction */ = {
+			isa = PBXGroup;
+			children = (
+				276ECA9222CE0D8900D9B822 /* PersonsAPI.swift */,
+				276ECA9022CE0D6B00D9B822 /* PersonsInteractor.swift */,
+				276ECA9622CE0EF500D9B822 /* PersonsInteractorContainer.swift */,
+				276ECA9C22CE103E00D9B822 /* PersonEvent.swift */,
+			);
+			path = Interaction;
+			sourceTree = "<group>";
+		};
+		276ECA7422CE0B9200D9B822 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				276ECA7D22CE0C1C00D9B822 /* Commands */,
+				276ECA7C22CE0C1500D9B822 /* Queries */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		276ECA7522CE0B9800D9B822 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				276ECA7622CE0BD900D9B822 /* Person.swift */,
+				276ECAA822CE1F7300D9B822 /* Email.swift */,
+				276ECA7822CE0BE600D9B822 /* UnvalidatedPerson.swift */,
+				276ECA7A22CE0BEF00D9B822 /* ValidatedPerson.swift */,
+				276ECAA222CE14D900D9B822 /* PersonValidator.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		276ECA7C22CE0C1500D9B822 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				276ECA8F22CE0D3900D9B822 /* Person */,
+				276ECA8E22CE0D2A00D9B822 /* AllPersons */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		276ECA7D22CE0C1C00D9B822 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				276ECA8D22CE0D2000D9B822 /* Delete */,
+				276ECA8C22CE0D1700D9B822 /* Update */,
+				276ECA8B22CE0D0D00D9B822 /* Create */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		276ECA8022CE0C4C00D9B822 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				276ECAA022CE140000D9B822 /* AppCore.framework */,
+				276ECA8122CE0C4C00D9B822 /* Shared.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		276ECA8B22CE0D0D00D9B822 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				276ECA8522CE0CBE00D9B822 /* CreatePersonUseCase.swift */,
+				276ECA9A22CE0F4C00D9B822 /* CreatePersonGateway.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		276ECA8C22CE0D1700D9B822 /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				276ECA8722CE0CD200D9B822 /* UpdatePersonUseCase.swift */,
+				276ECA9422CE0EA100D9B822 /* UpdatePersonGateway.swift */,
+			);
+			path = Update;
+			sourceTree = "<group>";
+		};
+		276ECA8D22CE0D2000D9B822 /* Delete */ = {
+			isa = PBXGroup;
+			children = (
+				276ECA8922CE0CE300D9B822 /* DeletePersonUseCase.swift */,
+				276ECA9822CE0F1D00D9B822 /* DeletePersonGateway.swift */,
+			);
+			path = Delete;
+			sourceTree = "<group>";
+		};
+		276ECA8E22CE0D2A00D9B822 /* AllPersons */ = {
+			isa = PBXGroup;
+			children = (
+				276ECA7E22CE0C3200D9B822 /* GetPersonsUseCase.swift */,
+				276ECAA622CE1C5E00D9B822 /* GetPersonsGateway.swift */,
+			);
+			path = AllPersons;
+			sourceTree = "<group>";
+		};
+		276ECA8F22CE0D3900D9B822 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				276ECA8322CE0C8F00D9B822 /* GetPersonDetailsUseCase.swift */,
+				276ECAA422CE1A5300D9B822 /* GetPersonDetailsGateway.swift */,
+			);
+			path = Person;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +317,7 @@
 				TargetAttributes = {
 					276EC96122CDD57A00D9B822 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					276EC96A22CDD57A00D9B822 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +364,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276ECA8422CE0C8F00D9B822 /* GetPersonDetailsUseCase.swift in Sources */,
+				276ECA7B22CE0BEF00D9B822 /* ValidatedPerson.swift in Sources */,
+				276ECA9722CE0EF500D9B822 /* PersonsInteractorContainer.swift in Sources */,
+				276ECA7F22CE0C3200D9B822 /* GetPersonsUseCase.swift in Sources */,
+				276ECA9322CE0D8900D9B822 /* PersonsAPI.swift in Sources */,
+				276ECA8822CE0CD200D9B822 /* UpdatePersonUseCase.swift in Sources */,
+				276ECAA922CE1F7300D9B822 /* Email.swift in Sources */,
+				276ECA9D22CE103E00D9B822 /* PersonEvent.swift in Sources */,
+				276ECA9122CE0D6B00D9B822 /* PersonsInteractor.swift in Sources */,
+				276ECA7922CE0BE600D9B822 /* UnvalidatedPerson.swift in Sources */,
+				276ECA8622CE0CBE00D9B822 /* CreatePersonUseCase.swift in Sources */,
+				276ECAA722CE1C5E00D9B822 /* GetPersonsGateway.swift in Sources */,
+				276ECA9B22CE0F4C00D9B822 /* CreatePersonGateway.swift in Sources */,
+				276ECA9522CE0EA100D9B822 /* UpdatePersonGateway.swift in Sources */,
+				276ECA9922CE0F1E00D9B822 /* DeletePersonGateway.swift in Sources */,
+				276ECAA322CE14D900D9B822 /* PersonValidator.swift in Sources */,
+				276ECA7722CE0BD900D9B822 /* Person.swift in Sources */,
+				276ECAA522CE1A5300D9B822 /* GetPersonDetailsGateway.swift in Sources */,
+				276ECA8A22CE0CE300D9B822 /* DeletePersonUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +530,7 @@
 		276EC97722CDD57A00D9B822 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +547,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JK.PersonsFeature;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +556,7 @@
 		276EC97822CDD57A00D9B822 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +581,7 @@
 		276EC97A22CDD57A00D9B822 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PersonsFeatureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +599,7 @@
 		276EC97B22CDD57A00D9B822 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PersonsFeatureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

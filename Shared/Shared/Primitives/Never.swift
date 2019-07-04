@@ -8,8 +8,4 @@
 
 import Foundation
 
-public enum Never { }
-
 extension Never: Swift.Error { }
-
-extension Never: Equatable { }

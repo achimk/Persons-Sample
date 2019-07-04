@@ -44,7 +44,7 @@ public struct UseCase {
             return container
         }
         
-        public func create<T>(_ f: @escaping (AccessToken, EventDispatcher) -> Future<T, ApplicationError>) -> Future<T, ApplicationError> {
+        public func create<T>(_ f: @escaping (AccessToken, @escaping EventDispatcher) -> Future<T, ApplicationError>) -> Future<T, ApplicationError> {
             return createUseCase(eventDispatcher: eventDispatcher, accessTokenRepository: accessTokenRepository, f)
         }
     }
@@ -77,7 +77,7 @@ public struct UseCase {
             return container
         }
         
-        public func create<T>(_ f: @escaping (EventDispatcher) -> Future<T, ApplicationError>) -> Future<T, ApplicationError> {
+        public func create<T>(_ f: @escaping (@escaping EventDispatcher) -> Future<T, ApplicationError>) -> Future<T, ApplicationError> {
             return createUseCase(eventDispatcher: eventDispatcher, f)
         }
     }
@@ -88,7 +88,7 @@ public struct UseCase {
 fileprivate func createUseCase<T>(
     eventDispatcher: EventDispatcher?,
     accessTokenRepository: AccessTokenRepository?,
-    _ f: @escaping (AccessToken, EventDispatcher) -> Future<T, ApplicationError>) -> Future<T, ApplicationError> {
+    _ f: @escaping (AccessToken, @escaping EventDispatcher) -> Future<T, ApplicationError>) -> Future<T, ApplicationError> {
     
     let eventDispatcher = eventDispatcher ?? Application.context.eventDispatcher
     let accessTokenRepository = accessTokenRepository ?? Application.context.container.accessTokenRepository
@@ -106,7 +106,7 @@ fileprivate func createUseCase<T>(
 
 fileprivate func createUseCase<T>(
     eventDispatcher: EventDispatcher?,
-    _ f: @escaping (EventDispatcher) -> Future<T, ApplicationError>) -> Future<T, ApplicationError> {
+    _ f: @escaping (@escaping EventDispatcher) -> Future<T, ApplicationError>) -> Future<T, ApplicationError> {
     
     let eventDispatcher = eventDispatcher ?? Application.context.eventDispatcher
     
