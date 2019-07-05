@@ -35,6 +35,9 @@
 		27241A3322CF88B400BB82A8 /* ValidationPatternContainUpperCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A2D22CF88B400BB82A8 /* ValidationPatternContainUpperCase.swift */; };
 		27241A3422CF88B400BB82A8 /* ValidationPatternEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A2E22CF88B400BB82A8 /* ValidationPatternEmail.swift */; };
 		27241A3522CF88B400BB82A8 /* ValidationPatternContainSpecialCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A2F22CF88B400BB82A8 /* ValidationPatternContainSpecialCharacter.swift */; };
+		27241A3722CF8A3A00BB82A8 /* CompareInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A3622CF8A3A00BB82A8 /* CompareInput.swift */; };
+		27241A3922CF8AF100BB82A8 /* EqualInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A3822CF8AF100BB82A8 /* EqualInput.swift */; };
+		27241A3B22CF8B6800BB82A8 /* AnyInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A3A22CF8B6800BB82A8 /* AnyInput.swift */; };
 		276EC90022CDD48600D9B822 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276EC8F622CDD48600D9B822 /* Shared.framework */; };
 		276EC90522CDD48600D9B822 /* SharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC90422CDD48600D9B822 /* SharedTests.swift */; };
 		276EC90722CDD48600D9B822 /* Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 276EC8F922CDD48600D9B822 /* Shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -136,6 +139,9 @@
 		27241A2D22CF88B400BB82A8 /* ValidationPatternContainUpperCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationPatternContainUpperCase.swift; sourceTree = "<group>"; };
 		27241A2E22CF88B400BB82A8 /* ValidationPatternEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationPatternEmail.swift; sourceTree = "<group>"; };
 		27241A2F22CF88B400BB82A8 /* ValidationPatternContainSpecialCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationPatternContainSpecialCharacter.swift; sourceTree = "<group>"; };
+		27241A3622CF8A3A00BB82A8 /* CompareInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareInput.swift; sourceTree = "<group>"; };
+		27241A3822CF8AF100BB82A8 /* EqualInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualInput.swift; sourceTree = "<group>"; };
+		27241A3A22CF8B6800BB82A8 /* AnyInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyInput.swift; sourceTree = "<group>"; };
 		276EC8F622CDD48600D9B822 /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		276EC8F922CDD48600D9B822 /* Shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
 		276EC8FA22CDD48600D9B822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -291,7 +297,10 @@
 		27241A2422CF881700BB82A8 /* Inputs */ = {
 			isa = PBXGroup;
 			children = (
+				27241A3A22CF8B6800BB82A8 /* AnyInput.swift */,
 				27241A2522CF882000BB82A8 /* TextInput.swift */,
+				27241A3622CF8A3A00BB82A8 /* CompareInput.swift */,
+				27241A3822CF8AF100BB82A8 /* EqualInput.swift */,
 			);
 			path = Inputs;
 			sourceTree = "<group>";
@@ -667,6 +676,7 @@
 				272419F922CF861A00BB82A8 /* ValidationRuleTextPattern.swift in Sources */,
 				276ECA1622CDDFCA00D9B822 /* NonEmpty+Dictionary.swift in Sources */,
 				276EC9E722CDD89F00D9B822 /* Dispatch+BrightFutures.swift in Sources */,
+				27241A3B22CF8B6800BB82A8 /* AnyInput.swift in Sources */,
 				272419F322CF861A00BB82A8 /* ValidationRuleEqual.swift in Sources */,
 				276ECA1C22CDDFCA00D9B822 /* NonEmpty+Collection.swift in Sources */,
 				272419FC22CF861A00BB82A8 /* ValidationRuleContains.swift in Sources */,
@@ -695,6 +705,7 @@
 				276ECA6C22CDFBF000D9B822 /* PublishSubject.swift in Sources */,
 				276ECA1F22CDDFCA00D9B822 /* NonEmpty+RandomAccessCollection.swift in Sources */,
 				276EC9FB22CDDBA900D9B822 /* Never.swift in Sources */,
+				27241A3922CF8AF100BB82A8 /* EqualInput.swift in Sources */,
 				27241A2622CF882000BB82A8 /* TextInput.swift in Sources */,
 				276EC9F322CDD89F00D9B822 /* Tagged.swift in Sources */,
 				27241A3022CF88B400BB82A8 /* AnyValidationPattern.swift in Sources */,
@@ -717,6 +728,7 @@
 				276EC9E322CDD89F00D9B822 /* Result+BrightFutures.swift in Sources */,
 				276EC9EC22CDD89F00D9B822 /* InvalidationToken.swift in Sources */,
 				276EC9DE22CDD89F00D9B822 /* ResultProtocol.swift in Sources */,
+				27241A3722CF8A3A00BB82A8 /* CompareInput.swift in Sources */,
 				276EC9E822CDD89F00D9B822 /* Promise.swift in Sources */,
 				27241A3422CF88B400BB82A8 /* ValidationPatternEmail.swift in Sources */,
 				272419F522CF861A00BB82A8 /* ValidationRuleTextEndsWith.swift in Sources */,

@@ -16,9 +16,7 @@ public struct ValidationRuleTextEndsWith<Error>: ValidationRule {
     }
     
     public func validate(_ value: String?) -> Bool {
-        
         guard let value = value else { return false }
-        
         return NSPredicate(format: "SELF ENDSWITH %@", pattern).evaluate(with: value)
     }
     

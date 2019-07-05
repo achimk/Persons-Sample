@@ -14,12 +14,9 @@ public struct ValidationRuleTextNotEmpty<Error>: ValidationRule {
     }
     
     public func validate(_ value: String?) -> Bool {
-        
         guard let value = value else { return false }
-        
         let set = CharacterSet.whitespacesAndNewlines
         let trimmed = value.trimmingCharacters(in: set)
-        
         return !trimmed.isEmpty
     }
 }

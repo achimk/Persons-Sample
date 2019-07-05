@@ -16,11 +16,9 @@ public struct ValidationRuleContains<Container: Sequence, Value: Equatable, Erro
     }
     
     public func validate(_ value: Value?) -> Bool {
-    
         guard let value = value else {
             return false
         }
-        
         return container.contains(value)
     }
 }

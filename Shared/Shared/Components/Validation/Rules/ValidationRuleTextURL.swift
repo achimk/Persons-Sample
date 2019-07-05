@@ -14,9 +14,7 @@ public struct ValidationRuleTextURL<Error>: ValidationRule {
     }
     
     public func validate(_ value: String?) -> Bool {
-        
         guard let value = value else { return false }
-        
         return URL(string: value) != nil
     }
     

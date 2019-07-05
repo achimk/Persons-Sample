@@ -16,7 +16,6 @@ public struct ValidationRuleTextCharacterSet<Error>: ValidationRule {
     }
     
     public func validate(_ value: String?) -> Bool {
-        
         guard let value = value else { return false }
         
         for uni in value.unicodeScalars {

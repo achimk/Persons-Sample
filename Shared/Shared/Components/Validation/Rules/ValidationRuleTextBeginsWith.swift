@@ -16,9 +16,7 @@ public struct ValidationRuleTextBeginsWith<Error>: ValidationRule {
     }
     
     public func validate(_ value: String?) -> Bool {
-        
         guard let value = value else { return false }
-        
         return NSPredicate(format: "SELF BEGINSWITH %@", pattern).evaluate(with: value)
     }
     

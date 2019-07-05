@@ -21,7 +21,6 @@ public struct ValidationRuleEqual<Value: Equatable, Error>: ValidationRule {
     }
     
     public func validate(_ value: Value?) -> Bool {
-        
         return value == dynamicTarget()
     }
 }

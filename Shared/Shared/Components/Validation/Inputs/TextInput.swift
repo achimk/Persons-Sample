@@ -28,16 +28,47 @@ public struct TextInput {
         case onlyDigits
         case onlyAlphanumerics
         case onlyLetters
-        case min(String)
-        case max(String)
-        case equal(String)
         case beginsWith(ValidationPattern)
         case endsWith(ValidationPattern)
         case regex(ValidationPattern)
         
+        // Compare
+        case min(String)
+        case max(String)
+        case equal(String)
+        
         // Patterns
         case email
         case url
+    }
+    
+    public enum Error: Swift.Error {
+        
+        // General
+        case isRequired
+        case isEmpty
+        case textLengthIsLess(than: UInt)
+        case textLengthIsGreater(than: UInt)
+        case textLengthIsNotEqual(to: UInt)
+        case textNotContainNumber
+        case textNotContainLowerCase
+        case textNotContainUpperCase
+        case textNotContainSpecialCharacter
+        case textNotOnlyDigits
+        case textNotOnlyAlphanumerics
+        case textNotOnlyLetters
+        case textNotMatchBeginsWith(ValidationPattern)
+        case textNotMatchEndsWith(ValidationPattern)
+        case textNotMatch(ValidationPattern)
+        
+        // Compare
+        case isLess(than: String)
+        case isGreater(than: String)
+        case isNotEqual(String)
+        
+        // Patterns
+        case invalidEmail
+        case invalidURL
     }
     
     public enum Length {

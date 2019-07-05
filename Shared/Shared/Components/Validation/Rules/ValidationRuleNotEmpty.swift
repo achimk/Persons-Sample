@@ -14,9 +14,7 @@ public struct ValidationRuleNotEmpty<Value: EmptyCheckable, Error>: ValidationRu
     }
     
     public func validate(_ value: Value?) -> Bool {
-        
         guard let value = value else { return false }
-        
         return !value.isEmpty
     }
 }

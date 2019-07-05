@@ -21,9 +21,7 @@ public struct ValidationRuleMax<Value: Comparable, Error>: ValidationRule {
     }
     
     public func validate(_ value: Value?) -> Bool {
-        
         guard let value = value else { return false }
-        
         return value <= dynamicTarget()
     }
 }
