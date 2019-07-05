@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272419CC22CF7C0C00BB82A8 /* CreatePersonUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272419CB22CF7C0C00BB82A8 /* CreatePersonUseCaseTests.swift */; };
+		272419CE22CF80B900BB82A8 /* UpdatePersonUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272419CD22CF80B900BB82A8 /* UpdatePersonUseCaseTests.swift */; };
+		272419D022CF810B00BB82A8 /* DeletePersonUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272419CF22CF810B00BB82A8 /* DeletePersonUseCaseTests.swift */; };
 		276EC96C22CDD57A00D9B822 /* PersonsFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276EC96222CDD57A00D9B822 /* PersonsFeature.framework */; };
 		276EC97122CDD57A00D9B822 /* PersonsFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC97022CDD57A00D9B822 /* PersonsFeatureTests.swift */; };
 		276EC97322CDD57A00D9B822 /* PersonsFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 276EC96522CDD57A00D9B822 /* PersonsFeature.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		272419CB22CF7C0C00BB82A8 /* CreatePersonUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePersonUseCaseTests.swift; sourceTree = "<group>"; };
+		272419CD22CF80B900BB82A8 /* UpdatePersonUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonUseCaseTests.swift; sourceTree = "<group>"; };
+		272419CF22CF810B00BB82A8 /* DeletePersonUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePersonUseCaseTests.swift; sourceTree = "<group>"; };
 		276EC96222CDD57A00D9B822 /* PersonsFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersonsFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		276EC96522CDD57A00D9B822 /* PersonsFeature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonsFeature.h; sourceTree = "<group>"; };
 		276EC96622CDD57A00D9B822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +100,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		272419C822CF7B2B00BB82A8 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				272419C922CF7B3300BB82A8 /* Commands */,
+				272419CA22CF7B3A00BB82A8 /* Queries */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		272419C922CF7B3300BB82A8 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				272419CB22CF7C0C00BB82A8 /* CreatePersonUseCaseTests.swift */,
+				272419CD22CF80B900BB82A8 /* UpdatePersonUseCaseTests.swift */,
+				272419CF22CF810B00BB82A8 /* DeletePersonUseCaseTests.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		272419CA22CF7B3A00BB82A8 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
 		276EC95822CDD57A00D9B822 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +162,7 @@
 		276EC96F22CDD57A00D9B822 /* PersonsFeatureTests */ = {
 			isa = PBXGroup;
 			children = (
+				272419C822CF7B2B00BB82A8 /* UseCases */,
 				276EC97022CDD57A00D9B822 /* PersonsFeatureTests.swift */,
 				276EC97222CDD57A00D9B822 /* Info.plist */,
 			);
@@ -390,7 +423,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272419CC22CF7C0C00BB82A8 /* CreatePersonUseCaseTests.swift in Sources */,
+				272419CE22CF80B900BB82A8 /* UpdatePersonUseCaseTests.swift in Sources */,
 				276EC97122CDD57A00D9B822 /* PersonsFeatureTests.swift in Sources */,
+				272419D022CF810B00BB82A8 /* DeletePersonUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
