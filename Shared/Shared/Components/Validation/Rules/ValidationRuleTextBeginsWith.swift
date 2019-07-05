@@ -1,0 +1,25 @@
+//
+//  Created by Joachim Kret on 05/07/2019.
+//  Copyright © 2019 Joachim Kret. All rights reserved.
+//
+
+import Foundation
+
+public struct ValidationRuleTextBeginsWith<Error>: ValidationRule {
+    
+    public let pattern: String
+    public let error: Error
+    
+    public init(pattern: String, error: Error) {
+        self.pattern = pattern
+        self.error = error
+    }
+    
+    public func validate(_ value: String?) -> Bool {
+        
+        guard let value = value else { return false }
+        
+        return NSPredicate(format: "SELF BEGINSWITH %@", pattern).evaluate(with: value)
+    }
+    
+}
