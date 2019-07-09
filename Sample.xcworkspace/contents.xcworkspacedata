@@ -19,6 +19,9 @@
       location = "container:"
       name = "Features">
       <FileRef
+         location = "group:AdaptersCore/AdaptersCore.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:PersonsFeature/PersonsFeature.xcodeproj">
       </FileRef>
    </Group>
