@@ -10,7 +10,18 @@ import Foundation
 
 final class PersonsListController {
     
+    private weak var wireframe: PersonsListWireframe?
+    
+    func attach(wireframe: PersonsListWireframe) {
+        self.wireframe = wireframe
+    }
+    
+    func detach() {
+        self.wireframe = nil
+    }
+    
     func selected(_ person: Person) {
-        print("-> selected: \(person)")
+        let context = PersonContext(id: person.id)
+        wireframe?.selectedPerson(with: context)
     }
 }

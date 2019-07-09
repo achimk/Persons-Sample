@@ -7,11 +7,28 @@
 //
 
 import Foundation
+import AppCore
+import Shared
+
+typealias PersonsListProvider = () -> Future<[Person], ApplicationError>
+typealias PersonsListEventSubscriber = (EventListener) -> ()
 
 struct PreparePersonsListFactory {
     
-    static func create() -> PersonsListModule {
+    static func create(provider: @escaping PersonsListProvider, subscriber: PersonsListEventSubscriber) -> PersonsListModule {
         
-        fatalError()
+        let (module, consumer) = PersonsListFactory.create()
+        
+        let model = PreparePersonsListModel(provider: provider)
+        
+        let controller = PreparePersonsListController(model: model)
+        
+        let presenter = PreparePersonsListPresenter(module: module, controller: controller, consumer: consumer)
+        
+        model.listener = presenter
+        
+        subscriber(model)
+        
+        return presenter
     }
 }

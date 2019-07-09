@@ -7,13 +7,25 @@
 //
 
 import Foundation
+import AppCore
+import Shared
 
-typealias PersonsConsumer = ([Person]) -> ()
+typealias PersonsConsumer = (Result<[Person], ApplicationError>) -> ()
 
 struct PersonsListFactory {
     
     static func create() -> (module: PersonsListModule, consumer: PersonsConsumer) {
         
-        fatalError()
+        let controller = PersonsListController()
+        
+        let presenter = PersonsListPresenter(controller: controller)
+        
+        let model = PersonsListModel()
+        
+        model.listener = presenter
+        
+        let consumer: PersonsConsumer = model.prepare(with:)
+        
+        return (presenter, consumer)
     }
 }

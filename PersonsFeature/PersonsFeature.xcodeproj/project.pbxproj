@@ -32,6 +32,15 @@
 		275C1AD122D5070F001D9439 /* PersonItemsViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1AD022D5070F001D9439 /* PersonItemsViewData.swift */; };
 		275C1AD322D50732001D9439 /* PersonItemsViewDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1AD222D50732001D9439 /* PersonItemsViewDataFactory.swift */; };
 		275C1AD722D509E4001D9439 /* PersonContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1AD622D509E4001D9439 /* PersonContext.swift */; };
+		275C1B1922D5180D001D9439 /* AdaptersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275C1B1822D5180D001D9439 /* AdaptersCore.framework */; };
+		275C1B1A22D5181F001D9439 /* AdaptersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275C1B1822D5180D001D9439 /* AdaptersCore.framework */; };
+		275C1B1D22D51CFA001D9439 /* PersonsListFeatureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B1C22D51CFA001D9439 /* PersonsListFeatureFactory.swift */; };
+		275C1B2122D52B64001D9439 /* PersonsInteractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B2022D52B64001D9439 /* PersonsInteractorFactory.swift */; };
+		275C1B2822D52C2F001D9439 /* GetPersonMiddlewareGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B2722D52C2F001D9439 /* GetPersonMiddlewareGateway.swift */; };
+		275C1B2A22D52C56001D9439 /* GetPersonDetailsMiddlewareGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B2922D52C56001D9439 /* GetPersonDetailsMiddlewareGateway.swift */; };
+		275C1B2C22D52C85001D9439 /* CreatePersonMiddlewareGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B2B22D52C85001D9439 /* CreatePersonMiddlewareGateway.swift */; };
+		275C1B2E22D52CCA001D9439 /* UpdatePersonMiddlewareGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B2D22D52CCA001D9439 /* UpdatePersonMiddlewareGateway.swift */; };
+		275C1B3022D52CF7001D9439 /* DeletePersonsMiddlewareGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B2F22D52CF7001D9439 /* DeletePersonsMiddlewareGateway.swift */; };
 		27686F0D22D4584A008AF596 /* InvalidPersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686F0C22D4584A008AF596 /* InvalidPersonData.swift */; };
 		276EC96C22CDD57A00D9B822 /* PersonsFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276EC96222CDD57A00D9B822 /* PersonsFeature.framework */; };
 		276EC97322CDD57A00D9B822 /* PersonsFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 276EC96522CDD57A00D9B822 /* PersonsFeature.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -90,6 +99,14 @@
 		275C1AD022D5070F001D9439 /* PersonItemsViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItemsViewData.swift; sourceTree = "<group>"; };
 		275C1AD222D50732001D9439 /* PersonItemsViewDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItemsViewDataFactory.swift; sourceTree = "<group>"; };
 		275C1AD622D509E4001D9439 /* PersonContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonContext.swift; sourceTree = "<group>"; };
+		275C1B1822D5180D001D9439 /* AdaptersCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AdaptersCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		275C1B1C22D51CFA001D9439 /* PersonsListFeatureFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListFeatureFactory.swift; sourceTree = "<group>"; };
+		275C1B2022D52B64001D9439 /* PersonsInteractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsInteractorFactory.swift; sourceTree = "<group>"; };
+		275C1B2722D52C2F001D9439 /* GetPersonMiddlewareGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonMiddlewareGateway.swift; sourceTree = "<group>"; };
+		275C1B2922D52C56001D9439 /* GetPersonDetailsMiddlewareGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonDetailsMiddlewareGateway.swift; sourceTree = "<group>"; };
+		275C1B2B22D52C85001D9439 /* CreatePersonMiddlewareGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePersonMiddlewareGateway.swift; sourceTree = "<group>"; };
+		275C1B2D22D52CCA001D9439 /* UpdatePersonMiddlewareGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonMiddlewareGateway.swift; sourceTree = "<group>"; };
+		275C1B2F22D52CF7001D9439 /* DeletePersonsMiddlewareGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePersonsMiddlewareGateway.swift; sourceTree = "<group>"; };
 		27686F0C22D4584A008AF596 /* InvalidPersonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidPersonData.swift; sourceTree = "<group>"; };
 		276EC96222CDD57A00D9B822 /* PersonsFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersonsFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		276EC96522CDD57A00D9B822 /* PersonsFeature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonsFeature.h; sourceTree = "<group>"; };
@@ -122,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275C1B1922D5180D001D9439 /* AdaptersCore.framework in Frameworks */,
 				270F087822D464F900927D88 /* AppCore.framework in Frameworks */,
 				270F087A22D464F900927D88 /* Shared.framework in Frameworks */,
 			);
@@ -133,6 +151,7 @@
 			files = (
 				276EC96C22CDD57A00D9B822 /* PersonsFeature.framework in Frameworks */,
 				270F088122D467E800927D88 /* AppCore.framework in Frameworks */,
+				275C1B1A22D5181F001D9439 /* AdaptersCore.framework in Frameworks */,
 				270F088222D467E800927D88 /* Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +251,55 @@
 			path = Contexts;
 			sourceTree = "<group>";
 		};
+		275C1B1B22D51CE3001D9439 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				275C1B1C22D51CFA001D9439 /* PersonsListFeatureFactory.swift */,
+				275C1B2022D52B64001D9439 /* PersonsInteractorFactory.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		275C1B2222D52BC8001D9439 /* GetPersons */ = {
+			isa = PBXGroup;
+			children = (
+				275C1B2722D52C2F001D9439 /* GetPersonMiddlewareGateway.swift */,
+			);
+			path = GetPersons;
+			sourceTree = "<group>";
+		};
+		275C1B2322D52BD2001D9439 /* GetPersonDetails */ = {
+			isa = PBXGroup;
+			children = (
+				275C1B2922D52C56001D9439 /* GetPersonDetailsMiddlewareGateway.swift */,
+			);
+			path = GetPersonDetails;
+			sourceTree = "<group>";
+		};
+		275C1B2422D52BDA001D9439 /* CreatePerson */ = {
+			isa = PBXGroup;
+			children = (
+				275C1B2B22D52C85001D9439 /* CreatePersonMiddlewareGateway.swift */,
+			);
+			path = CreatePerson;
+			sourceTree = "<group>";
+		};
+		275C1B2522D52BE4001D9439 /* UpdatePerson */ = {
+			isa = PBXGroup;
+			children = (
+				275C1B2D22D52CCA001D9439 /* UpdatePersonMiddlewareGateway.swift */,
+			);
+			path = UpdatePerson;
+			sourceTree = "<group>";
+		};
+		275C1B2622D52BEA001D9439 /* DeletePersons */ = {
+			isa = PBXGroup;
+			children = (
+				275C1B2F22D52CF7001D9439 /* DeletePersonsMiddlewareGateway.swift */,
+			);
+			path = DeletePersons;
+			sourceTree = "<group>";
+		};
 		276EC95822CDD57A00D9B822 = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +327,7 @@
 				276ECA7322CE0B7700D9B822 /* Interaction */,
 				276ECA7222CE0B7000D9B822 /* Presentation */,
 				276ECA7122CE0B6400D9B822 /* Infrastructure */,
+				275C1B1B22D51CE3001D9439 /* Features */,
 				276EC96522CDD57A00D9B822 /* PersonsFeature.h */,
 				276EC96622CDD57A00D9B822 /* Info.plist */,
 			);
@@ -277,6 +346,11 @@
 		276ECA7122CE0B6400D9B822 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				275C1B2622D52BEA001D9439 /* DeletePersons */,
+				275C1B2522D52BE4001D9439 /* UpdatePerson */,
+				275C1B2422D52BDA001D9439 /* CreatePerson */,
+				275C1B2322D52BD2001D9439 /* GetPersonDetails */,
+				275C1B2222D52BC8001D9439 /* GetPersons */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -351,6 +425,7 @@
 		276ECA8022CE0C4C00D9B822 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				275C1B1822D5180D001D9439 /* AdaptersCore.framework */,
 				270F087722D464F900927D88 /* AppCore.framework */,
 				270F087922D464F900927D88 /* Shared.framework */,
 			);
@@ -513,15 +588,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				276ECA8422CE0C8F00D9B822 /* GetPersonDetailsUseCase.swift in Sources */,
+				275C1B2A22D52C56001D9439 /* GetPersonDetailsMiddlewareGateway.swift in Sources */,
 				275C1AC722D505BC001D9439 /* PreparePersonsListPresenter.swift in Sources */,
 				276ECA7B22CE0BEF00D9B822 /* ValidatedPerson.swift in Sources */,
+				275C1B2122D52B64001D9439 /* PersonsInteractorFactory.swift in Sources */,
 				275C1AC122D50533001D9439 /* PersonsListFactory.swift in Sources */,
 				276ECA9722CE0EF500D9B822 /* PersonsInteractorContainer.swift in Sources */,
 				275C1AB022D50103001D9439 /* Website.swift in Sources */,
+				275C1B3022D52CF7001D9439 /* DeletePersonsMiddlewareGateway.swift in Sources */,
+				275C1B2E22D52CCA001D9439 /* UpdatePersonMiddlewareGateway.swift in Sources */,
 				276ECA7F22CE0C3200D9B822 /* GetPersonsUseCase.swift in Sources */,
 				275C1AB522D503F3001D9439 /* PersonsListModule.swift in Sources */,
 				276ECA9322CE0D8900D9B822 /* PersonsAPI.swift in Sources */,
 				275C1AD122D5070F001D9439 /* PersonItemsViewData.swift in Sources */,
+				275C1B1D22D51CFA001D9439 /* PersonsListFeatureFactory.swift in Sources */,
 				275C1AB722D50453001D9439 /* PersonsListUserInterface.swift in Sources */,
 				275C1ACF22D506CD001D9439 /* PersonItemViewData.swift in Sources */,
 				275C1ABD22D50499001D9439 /* PersonsListController.swift in Sources */,
@@ -546,6 +626,8 @@
 				276ECAA322CE14D900D9B822 /* PersonValidator.swift in Sources */,
 				276ECA7722CE0BD900D9B822 /* Person.swift in Sources */,
 				275C1AD722D509E4001D9439 /* PersonContext.swift in Sources */,
+				275C1B2C22D52C85001D9439 /* CreatePersonMiddlewareGateway.swift in Sources */,
+				275C1B2822D52C2F001D9439 /* GetPersonMiddlewareGateway.swift in Sources */,
 				276ECAA522CE1A5300D9B822 /* GetPersonDetailsGateway.swift in Sources */,
 				275C1ACB22D505DC001D9439 /* PreparePersonsListModel.swift in Sources */,
 				276ECA8A22CE0CE300D9B822 /* DeletePersonUseCase.swift in Sources */,

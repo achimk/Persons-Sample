@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import AdaptersCore
 
 public protocol PersonsListUserInterface: class {
  
     func present(viewData: PersonItemsViewData)
     
-    func present(errorReason: String)
+    func present(error viewData: ErrorViewData)
     
     func presentProgress()
     
