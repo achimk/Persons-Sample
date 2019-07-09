@@ -16,6 +16,7 @@ struct InvalidPersonData: Swift.Error {
         case surname
         case email
         case age
+        case website
     }
     
     

@@ -12,5 +12,6 @@ struct UnvalidatedPerson {
     let name: String?
     let surname: String?
     let email: String?
-    let age: UInt?
+    let age: String?
+    let website: String?
 }

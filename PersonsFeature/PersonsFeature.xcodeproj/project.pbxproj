@@ -15,6 +15,8 @@
 		270F088222D467E800927D88 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F087922D464F900927D88 /* Shared.framework */; };
 		270F088422D46A1200927D88 /* UpdatePersonUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272419CD22CF80B900BB82A8 /* UpdatePersonUseCaseTests.swift */; };
 		270F088522D46A9600927D88 /* DeletePersonUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272419CF22CF810B00BB82A8 /* DeletePersonUseCaseTests.swift */; };
+		275C1AAC22D4DAC4001D9439 /* Age.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1AAB22D4DAC4001D9439 /* Age.swift */; };
+		275C1AB022D50103001D9439 /* Website.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1AAF22D50103001D9439 /* Website.swift */; };
 		27686F0D22D4584A008AF596 /* InvalidPersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686F0C22D4584A008AF596 /* InvalidPersonData.swift */; };
 		276EC96C22CDD57A00D9B822 /* PersonsFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276EC96222CDD57A00D9B822 /* PersonsFeature.framework */; };
 		276EC97322CDD57A00D9B822 /* PersonsFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 276EC96522CDD57A00D9B822 /* PersonsFeature.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +58,8 @@
 		272419CB22CF7C0C00BB82A8 /* CreatePersonUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePersonUseCaseTests.swift; sourceTree = "<group>"; };
 		272419CD22CF80B900BB82A8 /* UpdatePersonUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonUseCaseTests.swift; sourceTree = "<group>"; };
 		272419CF22CF810B00BB82A8 /* DeletePersonUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePersonUseCaseTests.swift; sourceTree = "<group>"; };
+		275C1AAB22D4DAC4001D9439 /* Age.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Age.swift; sourceTree = "<group>"; };
+		275C1AAF22D50103001D9439 /* Website.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Website.swift; sourceTree = "<group>"; };
 		27686F0C22D4584A008AF596 /* InvalidPersonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidPersonData.swift; sourceTree = "<group>"; };
 		276EC96222CDD57A00D9B822 /* PersonsFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersonsFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		276EC96522CDD57A00D9B822 /* PersonsFeature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonsFeature.h; sourceTree = "<group>"; };
@@ -213,7 +217,9 @@
 			isa = PBXGroup;
 			children = (
 				276ECA7622CE0BD900D9B822 /* Person.swift */,
+				275C1AAB22D4DAC4001D9439 /* Age.swift */,
 				276ECAA822CE1F7300D9B822 /* Email.swift */,
+				275C1AAF22D50103001D9439 /* Website.swift */,
 				276ECA7822CE0BE600D9B822 /* UnvalidatedPerson.swift */,
 				276ECA7A22CE0BEF00D9B822 /* ValidatedPerson.swift */,
 				276ECAA222CE14D900D9B822 /* PersonValidator.swift */,
@@ -408,6 +414,7 @@
 				276ECA8422CE0C8F00D9B822 /* GetPersonDetailsUseCase.swift in Sources */,
 				276ECA7B22CE0BEF00D9B822 /* ValidatedPerson.swift in Sources */,
 				276ECA9722CE0EF500D9B822 /* PersonsInteractorContainer.swift in Sources */,
+				275C1AB022D50103001D9439 /* Website.swift in Sources */,
 				276ECA7F22CE0C3200D9B822 /* GetPersonsUseCase.swift in Sources */,
 				276ECA9322CE0D8900D9B822 /* PersonsAPI.swift in Sources */,
 				276ECA8822CE0CD200D9B822 /* UpdatePersonUseCase.swift in Sources */,
@@ -417,6 +424,7 @@
 				276ECA7922CE0BE600D9B822 /* UnvalidatedPerson.swift in Sources */,
 				27686F0D22D4584A008AF596 /* InvalidPersonData.swift in Sources */,
 				276ECA8622CE0CBE00D9B822 /* CreatePersonUseCase.swift in Sources */,
+				275C1AAC22D4DAC4001D9439 /* Age.swift in Sources */,
 				276ECAA722CE1C5E00D9B822 /* GetPersonsGateway.swift in Sources */,
 				276ECA9B22CE0F4C00D9B822 /* CreatePersonGateway.swift in Sources */,
 				276ECA9522CE0EA100D9B822 /* UpdatePersonGateway.swift in Sources */,

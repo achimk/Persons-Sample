@@ -17,7 +17,7 @@ final class CreatePersonUseCaseTests: XCTestCase {
         
         let e = expectation(description: "")
         let eventDispatcher = MockEventDispatcher()
-        let data = UnvalidatedPerson(name: "Stephen", surname: "Hawking", email: "stephen.hawking@com.us", age: 76)
+        let data = UnvalidatedPerson(name: "Stephen", surname: "Hawking", email: "stephen.hawking@com.us", age: "76", website: nil)
         let token = "TestAccessToken"
         let gateway = MockCreatePersonGateway()
         
@@ -37,7 +37,7 @@ final class CreatePersonUseCaseTests: XCTestCase {
 
         let e = expectation(description: "")
         let eventDispatcher = MockEventDispatcher()
-        let data = UnvalidatedPerson(name: nil, surname: nil, email: nil, age: nil)
+        let data = UnvalidatedPerson(name: nil, surname: nil, email: nil, age: nil, website: nil)
         let token = "TestAccessToken"
         let gateway = MockCreatePersonGateway()
         
@@ -57,7 +57,7 @@ final class CreatePersonUseCaseTests: XCTestCase {
         
         let e = expectation(description: "")
         let eventDispatcher = MockEventDispatcher()
-        let data = UnvalidatedPerson(name: "Stephen", surname: "Hawking", email: "stephen.hawking@com.us", age: 76)
+        let data = UnvalidatedPerson(name: "Stephen", surname: "Hawking", email: "stephen.hawking@com.us", age: "76", website: nil)
         let token = "TestAccessToken"
         let gateway = MockCreatePersonGateway()
         

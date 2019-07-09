@@ -31,9 +31,9 @@ final class MockEventDispatcher {
     
     private func handle(_ event: PersonEvent) {
         switch event {
-        case .created(let id): invokedCreateEvent = true
-        case .updated(let id): invokedUpdateEvent = true
-        case .deleted(let ids): invokedDeleteEvent = true
+        case .created: invokedCreateEvent = true
+        case .updated: invokedUpdateEvent = true
+        case .deleted: invokedDeleteEvent = true
         }
     }
 }

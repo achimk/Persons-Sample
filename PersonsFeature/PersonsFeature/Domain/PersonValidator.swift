@@ -12,30 +12,33 @@ import Shared
 struct PersonValidationRules {
     
     let name = TextRule
-        .required()
+        .create()
         .notEmpty()
         .onlyLetters()
     
     let surname = TextRule
-        .required()
+        .create()
         .notEmpty()
         .onlyLetters()
-    
-    let age = Rule<UInt>
-        .optional()
-        .greaterOrEqual(to: 18)
-        .less(than: 100)
 }
 
 func validatePerson(_ unvalidated: UnvalidatedPerson) -> Result<ValidatedPerson, InvalidPersonData> {
     
+    typealias Error = (InvalidPersonData.Key, ValidationError)
+    
     let rules = PersonValidationRules()
     
     let validated = zip(with: ValidatedPerson.init)(
-        rules.name.validate(unvalidated.name, key: InvalidPersonData.Key.name),
-        rules.surname.validate(unvalidated.surname, key: InvalidPersonData.Key.surname),
-        Email.from(unvalidated.email).mapErrors { (InvalidPersonData.Key.email, $0) },
-        rules.age.validate(unvalidated.age, key: InvalidPersonData.Key.age)
+        // name:
+        rules.name.validate(unvalidated.name).mapErrors { (InvalidPersonData.Key.name, $0) },
+        // surname:
+        rules.surname.validate(unvalidated.surname).mapErrors { (InvalidPersonData.Key.surname, $0) },
+        // email:
+        Email.create(unvalidated.email).mapErrors { (InvalidPersonData.Key.email, $0) },
+        // age:
+        validOn(empty: unvalidated.age, otherwise: Age.create).mapErrors { (InvalidPersonData.Key.age, $0) },
+        // website:
+        validOn(empty: unvalidated.website, otherwise: Website.create).mapErrors { (InvalidPersonData.Key.website, $0) }
     )
     
     switch validated {

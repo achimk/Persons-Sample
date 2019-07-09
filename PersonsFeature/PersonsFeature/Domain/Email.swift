@@ -17,9 +17,9 @@ struct Email {
         self.value = input
     }
     
-    static func from(_ input: String?) -> Validated<Email, ValidationError> {
+    static func create(_ input: String?) -> Validated<Email, ValidationError> {
         return TextRule
-            .required()
+            .create()
             .isEmail()
             .validate(input)
             .map { Email($0) }

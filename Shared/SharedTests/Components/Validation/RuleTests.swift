@@ -13,27 +13,27 @@ final class RuleTests: XCTestCase {
     
     struct PersonRules {
         let name = TextRule
-            .required()
+            .create()
             .notEmpty()
             .onlyLetters()
         
         let surname = TextRule
-            .required()
+            .create()
             .notEmpty()
             .onlyLetters()
         
         let initials = TextRule
-            .optional()
+            .create()
             .minLength(1)
             .maxLength(3)
         
         let age = Rule<UInt>
-            .required()
+            .create()
             .greaterOrEqual(to: 18)
             .less(than: 100)
         
         let email = TextRule
-            .optional()
+            .create()
             .isEmail()
     }
     
@@ -97,11 +97,9 @@ final class RuleTests: XCTestCase {
             age: 76,
             email: "stephen.hawking@com.us")
         
-        let result = validateKeyed(dto, .allErrors)
+        let result = validateKeyed(dto)
         
         XCTAssertTrue(result.isValid)
-        
-        print(result)
     }
     
     func testValidateKeyedFailure() {
@@ -112,11 +110,9 @@ final class RuleTests: XCTestCase {
             age: 176,
             email: "stephen.hawking@com.us")
         
-        let result = validateKeyed(dto, .allErrors)
+        let result = validateKeyed(dto)
         
         XCTAssertFalse(result.isValid)
-        
-        print(result)
     }
     
     private func validate(_ dto: UnvalidatedPerson) -> Validated<Person, ValidationError> {
@@ -124,24 +120,34 @@ final class RuleTests: XCTestCase {
         let rules = PersonRules()
         
         return zip(with: Person.init(name:surname:initials:age:email:))(
+            // name:
             rules.name.validate(dto.name),
+            // surname:
             rules.surname.validate(dto.surname),
-            rules.initials.validate(dto.initials),
+            // initials:
+            validOn(empty: dto.initials, otherwise: rules.initials.validate),
+            // age:
             rules.age.validate(dto.age),
-            rules.email.validate(dto.email)
+            // email:
+            validOn(empty: dto.email, otherwise: rules.email.validate)
         )
     }
     
-    private func validateKeyed(_ dto: UnvalidatedPerson, _ strategy: RuleErrorStrategy = .firstError) -> Validated<Person, (PersonKey, ValidationError)> {
+    private func validateKeyed(_ dto: UnvalidatedPerson) -> Validated<Person, (PersonKey, ValidationError)> {
         
         let rules = PersonRules()
         
         return zip(with: Person.init(name:surname:initials:age:email:))(
-            rules.name.validate(dto.name, key: PersonKey.name, strategy: strategy),
-            rules.surname.validate(dto.surname, key: PersonKey.surname, strategy: strategy),
-            rules.initials.validate(dto.initials, key: PersonKey.initials, strategy: strategy),
-            rules.age.validate(dto.age, key: PersonKey.age, strategy: strategy),
-            rules.email.validate(dto.email, key: PersonKey.email, strategy: strategy)
+            // name:
+            rules.name.validate(dto.name).mapErrors { (PersonKey.name, $0) },
+            // surname:
+            rules.surname.validate(dto.surname).mapErrors { (PersonKey.surname, $0) },
+            // initials:
+            validOn(empty: dto.initials, otherwise: rules.initials.validate).mapErrors { (PersonKey.initials, $0) },
+            // age:
+            rules.age.validate(dto.age).mapErrors { (PersonKey.age, $0) },
+            // email:
+            validOn(empty: dto.email, otherwise: rules.email.validate).mapErrors { (PersonKey.email, $0) }
         )
     }
 }

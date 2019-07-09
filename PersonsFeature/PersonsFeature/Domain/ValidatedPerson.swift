@@ -12,5 +12,6 @@ struct ValidatedPerson {
     let name: String
     let surname: String
     let email: Email
-    let age: UInt?
+    let age: Age?
+    let website: Website?
 }
