@@ -15,11 +15,62 @@ final class CreatePersonUseCaseTests: XCTestCase {
     
     func testCreatePersonSuccess() {
         
+        let e = expectation(description: "")
+        let eventDispatcher = MockEventDispatcher()
+        let data = UnvalidatedPerson(name: "Stephen", surname: "Hawking", email: "stephen.hawking@com.us", age: 76)
+        let token = "TestAccessToken"
+        let gateway = MockCreatePersonGateway()
+        
+        let useCase = CreatePersonUseCase(data: data, token: token, eventDispatcher: eventDispatcher.dispatch, gateway: gateway)
+        gateway.complete(with: PersonId.init(rawValue: "1"))
+        
+        useCase.prepare().onComplete { (result) in
+            XCTAssertTrue(result.isSuccess)
+            XCTAssertTrue(eventDispatcher.invokedCreateEvent)
+            e.fulfill()
+        }
 
+        wait(for: [e], timeout: 1)
     }
     
-    func testCreatePersonFailure() {
+    func testCreatePersonValidationFailure() {
+
+        let e = expectation(description: "")
+        let eventDispatcher = MockEventDispatcher()
+        let data = UnvalidatedPerson(name: nil, surname: nil, email: nil, age: nil)
+        let token = "TestAccessToken"
+        let gateway = MockCreatePersonGateway()
         
+        let useCase = CreatePersonUseCase(data: data, token: token, eventDispatcher: eventDispatcher.dispatch, gateway: gateway)
+        gateway.complete(with: PersonId.init(rawValue: "1"))
+        
+        useCase.prepare().onComplete { (result) in
+            XCTAssertTrue(result.isFailure)
+            XCTAssertFalse(eventDispatcher.invokedCreateEvent)
+            e.fulfill()
+        }
+        
+        wait(for: [e], timeout: 1)
+    }
+    
+    func testCreatePersonGatewayFailure() {
+        
+        let e = expectation(description: "")
+        let eventDispatcher = MockEventDispatcher()
+        let data = UnvalidatedPerson(name: "Stephen", surname: "Hawking", email: "stephen.hawking@com.us", age: 76)
+        let token = "TestAccessToken"
+        let gateway = MockCreatePersonGateway()
+        
+        let useCase = CreatePersonUseCase(data: data, token: token, eventDispatcher: eventDispatcher.dispatch, gateway: gateway)
+        gateway.complete(with: ApplicationError.unexpectedErrorOccurred)
+        
+        useCase.prepare().onComplete { (result) in
+            XCTAssertFalse(result.isSuccess)
+            XCTAssertFalse(eventDispatcher.invokedCreateEvent)
+            e.fulfill()
+        }
+        
+        wait(for: [e], timeout: 1)
     }
 }
 
@@ -27,21 +78,17 @@ extension CreatePersonUseCaseTests {
     
     final class MockCreatePersonGateway: CreatePersonGateway {
         
-        private var promise: Promise<PersonId, ApplicationError>?
+        private let promise = Promise<PersonId, ApplicationError>()
         
         func complete(with personId: PersonId) {
-            promise?.complete(.success(personId))
-            promise = nil
+            promise.complete(.success(personId))
         }
         
         func complete(with error: ApplicationError) {
-            promise?.complete(.failure(error))
-            promise = nil
+            promise.complete(.failure(error))
         }
         
         func create(with data: ValidatedPerson, token: AccessToken) -> Future<PersonId, ApplicationError> {
-            let promise = Promise<PersonId, ApplicationError>()
-            self.promise = promise
             return promise.future
         }        
     }

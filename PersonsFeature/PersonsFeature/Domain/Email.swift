@@ -7,16 +7,21 @@
 //
 
 import Foundation
+import Shared
 
 struct Email {
     
     let value: String
     
-    init?(_ value: String?) {
-        
-        guard let value = value else { return nil }
-        
-        // FIXME: Validate email with rule!
-        self.value = value
+    private init(_ input: String) {
+        self.value = input
+    }
+    
+    static func from(_ input: String?) -> Validated<Email, ValidationError> {
+        return TextRule
+            .required()
+            .isEmail()
+            .validate(input)
+            .map { Email($0) }
     }
 }
