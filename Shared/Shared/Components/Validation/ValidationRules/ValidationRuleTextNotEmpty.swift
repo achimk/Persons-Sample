@@ -5,19 +5,20 @@
 
 import Foundation
 
-public struct ValidationRuleTextEndsWith<Error>: ValidationRule {
+public struct ValidationRuleTextNotEmpty<Error>: ValidationRule where Error: Swift.Error {
     
-    public let pattern: String
     public let error: Error
     
-    public init(pattern: String, error: Error) {
-        self.pattern = pattern
+    public init(error: Error) {
         self.error = error
     }
     
     public func validate(_ value: String?) -> Bool {
         guard let value = value else { return false }
-        return NSPredicate(format: "SELF ENDSWITH %@", pattern).evaluate(with: value)
+        let set = CharacterSet.whitespacesAndNewlines
+        let trimmed = value.trimmingCharacters(in: set)
+        return !trimmed.isEmpty
     }
-    
 }
+
+

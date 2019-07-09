@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct ValidationRuleContains<Container: Sequence, Value: Equatable, Error>: ValidationRule where Container.Element == Value {
+public struct ValidationRuleContains<Container: Sequence, Value: Equatable, Error>: ValidationRule where Container.Element == Value, Error: Swift.Error {
     
     public let error: Error
     public let container: Container

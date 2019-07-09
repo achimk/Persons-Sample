@@ -10,9 +10,13 @@ import Foundation
 
 public protocol ValidationRule {
     associatedtype Value
-    associatedtype Error
-    
+    associatedtype Error: Swift.Error
     var error: Error { get }
-    
     func validate(_ value: Value?) -> Bool
+}
+
+extension ValidationRule {
+    public func asValidator() -> AnyValidator {
+        return AnyValidator(self)
+    }
 }

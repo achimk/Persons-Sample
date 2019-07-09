@@ -27,7 +27,6 @@
 		27241A0022CF861A00BB82A8 /* ValidationRuleMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272419F122CF861900BB82A8 /* ValidationRuleMax.swift */; };
 		27241A0122CF861A00BB82A8 /* ValidationRuleTextBeginsWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272419F222CF861900BB82A8 /* ValidationRuleTextBeginsWith.swift */; };
 		27241A2322CF86AB00BB82A8 /* EmptyCheckable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A2222CF86AB00BB82A8 /* EmptyCheckable.swift */; };
-		27241A2622CF882000BB82A8 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A2522CF882000BB82A8 /* TextInput.swift */; };
 		27241A2922CF888E00BB82A8 /* ValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A2822CF888E00BB82A8 /* ValidationPattern.swift */; };
 		27241A3022CF88B400BB82A8 /* AnyValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A2A22CF88B400BB82A8 /* AnyValidationPattern.swift */; };
 		27241A3122CF88B400BB82A8 /* ValidationPatternContainLowerCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A2B22CF88B400BB82A8 /* ValidationPatternContainLowerCase.swift */; };
@@ -35,9 +34,21 @@
 		27241A3322CF88B400BB82A8 /* ValidationPatternContainUpperCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A2D22CF88B400BB82A8 /* ValidationPatternContainUpperCase.swift */; };
 		27241A3422CF88B400BB82A8 /* ValidationPatternEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A2E22CF88B400BB82A8 /* ValidationPatternEmail.swift */; };
 		27241A3522CF88B400BB82A8 /* ValidationPatternContainSpecialCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A2F22CF88B400BB82A8 /* ValidationPatternContainSpecialCharacter.swift */; };
-		27241A3722CF8A3A00BB82A8 /* CompareInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A3622CF8A3A00BB82A8 /* CompareInput.swift */; };
-		27241A3922CF8AF100BB82A8 /* EqualInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A3822CF8AF100BB82A8 /* EqualInput.swift */; };
-		27241A3B22CF8B6800BB82A8 /* AnyInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A3A22CF8B6800BB82A8 /* AnyInput.swift */; };
+		27241A3F22CF962B00BB82A8 /* AnyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A3E22CF962B00BB82A8 /* AnyValidator.swift */; };
+		27241A4322D03EB400BB82A8 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A4222D03EB400BB82A8 /* Rule.swift */; };
+		2756212022D2253B002FAA57 /* TextInputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A2522CF882000BB82A8 /* TextInputError.swift */; };
+		27686EF422D3AF69008AF596 /* Rule+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686EF322D3AF69008AF596 /* Rule+Text.swift */; };
+		27686EF522D3B075008AF596 /* CompareInputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A3622CF8A3A00BB82A8 /* CompareInputError.swift */; };
+		27686EF622D3B09C008AF596 /* EqualInputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27241A3822CF8AF100BB82A8 /* EqualInputError.swift */; };
+		27686EF822D3B0AA008AF596 /* Rule+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686EF722D3B0AA008AF596 /* Rule+Compare.swift */; };
+		27686EFA22D3B0B3008AF596 /* Rule+Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686EF922D3B0B3008AF596 /* Rule+Equal.swift */; };
+		27686EFC22D3B0D3008AF596 /* Rule+Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686EFB22D3B0D3008AF596 /* Rule+Other.swift */; };
+		27686EFF22D3B141008AF596 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686EFE22D3B141008AF596 /* ValidationError.swift */; };
+		27686F0122D3B868008AF596 /* ValidationRuleGreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686F0022D3B868008AF596 /* ValidationRuleGreater.swift */; };
+		27686F0322D3B8A2008AF596 /* ValidationRuleLess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686F0222D3B8A2008AF596 /* ValidationRuleLess.swift */; };
+		27686F0522D3BA0C008AF596 /* ValidationRuleNotEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686F0422D3BA0C008AF596 /* ValidationRuleNotEqual.swift */; };
+		27686F0922D3BB68008AF596 /* RuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686F0822D3BB68008AF596 /* RuleTests.swift */; };
+		27686F0B22D44A9F008AF596 /* NonEmpty+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27686F0A22D44A9F008AF596 /* NonEmpty+Extensions.swift */; };
 		276EC90022CDD48600D9B822 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276EC8F622CDD48600D9B822 /* Shared.framework */; };
 		276EC90522CDD48600D9B822 /* SharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EC90422CDD48600D9B822 /* SharedTests.swift */; };
 		276EC90722CDD48600D9B822 /* Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 276EC8F922CDD48600D9B822 /* Shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -131,7 +142,7 @@
 		272419F122CF861900BB82A8 /* ValidationRuleMax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationRuleMax.swift; sourceTree = "<group>"; };
 		272419F222CF861900BB82A8 /* ValidationRuleTextBeginsWith.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationRuleTextBeginsWith.swift; sourceTree = "<group>"; };
 		27241A2222CF86AB00BB82A8 /* EmptyCheckable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCheckable.swift; sourceTree = "<group>"; };
-		27241A2522CF882000BB82A8 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		27241A2522CF882000BB82A8 /* TextInputError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputError.swift; sourceTree = "<group>"; };
 		27241A2822CF888E00BB82A8 /* ValidationPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationPattern.swift; sourceTree = "<group>"; };
 		27241A2A22CF88B400BB82A8 /* AnyValidationPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyValidationPattern.swift; sourceTree = "<group>"; };
 		27241A2B22CF88B400BB82A8 /* ValidationPatternContainLowerCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationPatternContainLowerCase.swift; sourceTree = "<group>"; };
@@ -139,9 +150,20 @@
 		27241A2D22CF88B400BB82A8 /* ValidationPatternContainUpperCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationPatternContainUpperCase.swift; sourceTree = "<group>"; };
 		27241A2E22CF88B400BB82A8 /* ValidationPatternEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationPatternEmail.swift; sourceTree = "<group>"; };
 		27241A2F22CF88B400BB82A8 /* ValidationPatternContainSpecialCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationPatternContainSpecialCharacter.swift; sourceTree = "<group>"; };
-		27241A3622CF8A3A00BB82A8 /* CompareInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareInput.swift; sourceTree = "<group>"; };
-		27241A3822CF8AF100BB82A8 /* EqualInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualInput.swift; sourceTree = "<group>"; };
-		27241A3A22CF8B6800BB82A8 /* AnyInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyInput.swift; sourceTree = "<group>"; };
+		27241A3622CF8A3A00BB82A8 /* CompareInputError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareInputError.swift; sourceTree = "<group>"; };
+		27241A3822CF8AF100BB82A8 /* EqualInputError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualInputError.swift; sourceTree = "<group>"; };
+		27241A3E22CF962B00BB82A8 /* AnyValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyValidator.swift; sourceTree = "<group>"; };
+		27241A4222D03EB400BB82A8 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		27686EF322D3AF69008AF596 /* Rule+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+Text.swift"; sourceTree = "<group>"; };
+		27686EF722D3B0AA008AF596 /* Rule+Compare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+Compare.swift"; sourceTree = "<group>"; };
+		27686EF922D3B0B3008AF596 /* Rule+Equal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+Equal.swift"; sourceTree = "<group>"; };
+		27686EFB22D3B0D3008AF596 /* Rule+Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+Other.swift"; sourceTree = "<group>"; };
+		27686EFE22D3B141008AF596 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		27686F0022D3B868008AF596 /* ValidationRuleGreater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationRuleGreater.swift; sourceTree = "<group>"; };
+		27686F0222D3B8A2008AF596 /* ValidationRuleLess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationRuleLess.swift; sourceTree = "<group>"; };
+		27686F0422D3BA0C008AF596 /* ValidationRuleNotEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationRuleNotEqual.swift; sourceTree = "<group>"; };
+		27686F0822D3BB68008AF596 /* RuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleTests.swift; sourceTree = "<group>"; };
+		27686F0A22D44A9F008AF596 /* NonEmpty+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NonEmpty+Extensions.swift"; sourceTree = "<group>"; };
 		276EC8F622CDD48600D9B822 /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		276EC8F922CDD48600D9B822 /* Shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
 		276EC8FA22CDD48600D9B822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -263,21 +285,26 @@
 		272419DE22CF855000BB82A8 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
-				27241A2422CF881700BB82A8 /* Inputs */,
+				27686EFD22D3B12B008AF596 /* Errors */,
+				27241A2422CF881700BB82A8 /* Rules */,
 				27241A2722CF887F00BB82A8 /* Patterns */,
-				272419DF22CF857000BB82A8 /* Rules */,
+				272419DF22CF857000BB82A8 /* ValidationRules */,
+				27241A3E22CF962B00BB82A8 /* AnyValidator.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
 		};
-		272419DF22CF857000BB82A8 /* Rules */ = {
+		272419DF22CF857000BB82A8 /* ValidationRules */ = {
 			isa = PBXGroup;
 			children = (
 				272419E022CF857600BB82A8 /* ValidationRule.swift */,
 				272419EB22CF861900BB82A8 /* ValidationRuleCondition.swift */,
 				272419ED22CF861900BB82A8 /* ValidationRuleContains.swift */,
 				272419E422CF861900BB82A8 /* ValidationRuleEqual.swift */,
+				27686F0422D3BA0C008AF596 /* ValidationRuleNotEqual.swift */,
 				272419E222CF85B000BB82A8 /* ValidationRuleRequired.swift */,
+				27686F0022D3B868008AF596 /* ValidationRuleGreater.swift */,
+				27686F0222D3B8A2008AF596 /* ValidationRuleLess.swift */,
 				272419F122CF861900BB82A8 /* ValidationRuleMax.swift */,
 				272419E522CF861900BB82A8 /* ValidationRuleMin.swift */,
 				272419E822CF861900BB82A8 /* ValidationRuleNotEmpty.swift */,
@@ -291,18 +318,19 @@
 				272419EA22CF861900BB82A8 /* ValidationRuleTextPattern.swift */,
 				272419EF22CF861900BB82A8 /* ValidationRuleTextURL.swift */,
 			);
-			path = Rules;
+			path = ValidationRules;
 			sourceTree = "<group>";
 		};
-		27241A2422CF881700BB82A8 /* Inputs */ = {
+		27241A2422CF881700BB82A8 /* Rules */ = {
 			isa = PBXGroup;
 			children = (
-				27241A3A22CF8B6800BB82A8 /* AnyInput.swift */,
-				27241A2522CF882000BB82A8 /* TextInput.swift */,
-				27241A3622CF8A3A00BB82A8 /* CompareInput.swift */,
-				27241A3822CF8AF100BB82A8 /* EqualInput.swift */,
+				27241A4222D03EB400BB82A8 /* Rule.swift */,
+				27686EF322D3AF69008AF596 /* Rule+Text.swift */,
+				27686EF722D3B0AA008AF596 /* Rule+Compare.swift */,
+				27686EF922D3B0B3008AF596 /* Rule+Equal.swift */,
+				27686EFB22D3B0D3008AF596 /* Rule+Other.swift */,
 			);
-			path = Inputs;
+			path = Rules;
 			sourceTree = "<group>";
 		};
 		27241A2722CF887F00BB82A8 /* Patterns */ = {
@@ -317,6 +345,33 @@
 				27241A2E22CF88B400BB82A8 /* ValidationPatternEmail.swift */,
 			);
 			path = Patterns;
+			sourceTree = "<group>";
+		};
+		27686EFD22D3B12B008AF596 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				27241A2522CF882000BB82A8 /* TextInputError.swift */,
+				27241A3622CF8A3A00BB82A8 /* CompareInputError.swift */,
+				27241A3822CF8AF100BB82A8 /* EqualInputError.swift */,
+				27686EFE22D3B141008AF596 /* ValidationError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		27686F0622D3BB48008AF596 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				27686F0722D3BB52008AF596 /* Validation */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		27686F0722D3BB52008AF596 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				27686F0822D3BB68008AF596 /* RuleTests.swift */,
+			);
+			path = Validation;
 			sourceTree = "<group>";
 		};
 		276EC8EC22CDD48500D9B822 = {
@@ -356,6 +411,7 @@
 		276EC90322CDD48600D9B822 /* SharedTests */ = {
 			isa = PBXGroup;
 			children = (
+				27686F0622D3BB48008AF596 /* Components */,
 				276EC90422CDD48600D9B822 /* SharedTests.swift */,
 				276EC90622CDD48600D9B822 /* Info.plist */,
 			);
@@ -519,6 +575,7 @@
 				276ECA2A22CDE65700D9B822 /* Collection+Extensions.swift */,
 				276ECA2C22CDE67E00D9B822 /* Decimal+Extensions.swift */,
 				27241A2222CF86AB00BB82A8 /* EmptyCheckable.swift */,
+				27686F0A22D44A9F008AF596 /* NonEmpty+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -674,12 +731,14 @@
 				272419E322CF85B000BB82A8 /* ValidationRuleRequired.swift in Sources */,
 				272419F822CF861A00BB82A8 /* ValidationRuleTextNotEmpty.swift in Sources */,
 				272419F922CF861A00BB82A8 /* ValidationRuleTextPattern.swift in Sources */,
+				27241A3F22CF962B00BB82A8 /* AnyValidator.swift in Sources */,
 				276ECA1622CDDFCA00D9B822 /* NonEmpty+Dictionary.swift in Sources */,
 				276EC9E722CDD89F00D9B822 /* Dispatch+BrightFutures.swift in Sources */,
-				27241A3B22CF8B6800BB82A8 /* AnyInput.swift in Sources */,
 				272419F322CF861A00BB82A8 /* ValidationRuleEqual.swift in Sources */,
 				276ECA1C22CDDFCA00D9B822 /* NonEmpty+Collection.swift in Sources */,
+				27686EFC22D3B0D3008AF596 /* Rule+Other.swift in Sources */,
 				272419FC22CF861A00BB82A8 /* ValidationRuleContains.swift in Sources */,
+				27686EFF22D3B141008AF596 /* ValidationError.swift in Sources */,
 				272419FB22CF861A00BB82A8 /* ValidationRuleTextLengthEqual.swift in Sources */,
 				276ECA3022CDE74900D9B822 /* Once.swift in Sources */,
 				276EC9F422CDD89F00D9B822 /* TaggedMoney.swift in Sources */,
@@ -687,6 +746,7 @@
 				276ECA1822CDDFCA00D9B822 /* NonEmpty+Random.swift in Sources */,
 				276EC9E122CDD89F00D9B822 /* AsyncType+ResultType.swift in Sources */,
 				276ECA3D22CDEE2900D9B822 /* Optional.swift in Sources */,
+				27686EFA22D3B0B3008AF596 /* Rule+Equal.swift in Sources */,
 				276ECA2922CDE63A00D9B822 /* TimeZone+Extensions.swift in Sources */,
 				276ECA2B22CDE65700D9B822 /* Collection+Extensions.swift in Sources */,
 				276ECA0022CDDCDC00D9B822 /* Sort.swift in Sources */,
@@ -696,6 +756,8 @@
 				276ECA1722CDDFCA00D9B822 /* NonEmpty+SetAlgebra.swift in Sources */,
 				276ECA3F22CDEE2900D9B822 /* With.swift in Sources */,
 				276ECA2D22CDE67E00D9B822 /* Decimal+Extensions.swift in Sources */,
+				27686EF422D3AF69008AF596 /* Rule+Text.swift in Sources */,
+				27686F0122D3B868008AF596 /* ValidationRuleGreater.swift in Sources */,
 				276EC9E422CDD89F00D9B822 /* MutableAsyncType.swift in Sources */,
 				276EC9F722CDD97B00D9B822 /* Result.swift in Sources */,
 				276ECA3E22CDEE2900D9B822 /* Uncurry.swift in Sources */,
@@ -705,14 +767,14 @@
 				276ECA6C22CDFBF000D9B822 /* PublishSubject.swift in Sources */,
 				276ECA1F22CDDFCA00D9B822 /* NonEmpty+RandomAccessCollection.swift in Sources */,
 				276EC9FB22CDDBA900D9B822 /* Never.swift in Sources */,
-				27241A3922CF8AF100BB82A8 /* EqualInput.swift in Sources */,
-				27241A2622CF882000BB82A8 /* TextInput.swift in Sources */,
 				276EC9F322CDD89F00D9B822 /* Tagged.swift in Sources */,
 				27241A3022CF88B400BB82A8 /* AnyValidationPattern.swift in Sources */,
 				276ECA1B22CDDFCA00D9B822 /* NonEmpty+Comparable.swift in Sources */,
 				276EC9E622CDD89F00D9B822 /* Async.swift in Sources */,
 				276ECA1922CDDFCA00D9B822 /* NonEmpty+MutableCollection.swift in Sources */,
 				276EC9ED22CDD89F00D9B822 /* MutableAsyncType+ResultType.swift in Sources */,
+				27686F0B22D44A9F008AF596 /* NonEmpty+Extensions.swift in Sources */,
+				27686EF822D3B0AA008AF596 /* Rule+Compare.swift in Sources */,
 				272419F622CF861A00BB82A8 /* ValidationRuleTextLengthMin.swift in Sources */,
 				276EC9E922CDD89F00D9B822 /* SequenceType+BrightFutures.swift in Sources */,
 				276EC9EA22CDD89F00D9B822 /* Errors.swift in Sources */,
@@ -728,12 +790,14 @@
 				276EC9E322CDD89F00D9B822 /* Result+BrightFutures.swift in Sources */,
 				276EC9EC22CDD89F00D9B822 /* InvalidationToken.swift in Sources */,
 				276EC9DE22CDD89F00D9B822 /* ResultProtocol.swift in Sources */,
-				27241A3722CF8A3A00BB82A8 /* CompareInput.swift in Sources */,
 				276EC9E822CDD89F00D9B822 /* Promise.swift in Sources */,
 				27241A3422CF88B400BB82A8 /* ValidationPatternEmail.swift in Sources */,
 				272419F522CF861A00BB82A8 /* ValidationRuleTextEndsWith.swift in Sources */,
+				27241A4322D03EB400BB82A8 /* Rule.swift in Sources */,
+				27686F0522D3BA0C008AF596 /* ValidationRuleNotEqual.swift in Sources */,
 				276ECA4322CDEE2900D9B822 /* Curry.swift in Sources */,
 				27241A0122CF861A00BB82A8 /* ValidationRuleTextBeginsWith.swift in Sources */,
+				2756212022D2253B002FAA57 /* TextInputError.swift in Sources */,
 				272419D522CF84CA00BB82A8 /* Validated.swift in Sources */,
 				272419F422CF861A00BB82A8 /* ValidationRuleMin.swift in Sources */,
 				276EC9E022CDD89F00D9B822 /* AsyncType.swift in Sources */,
@@ -744,11 +808,14 @@
 				276ECA2122CDDFCA00D9B822 /* NonEmpty+BidirectionalCollection.swift in Sources */,
 				27241A3222CF88B400BB82A8 /* ValidationPatternContainNumber.swift in Sources */,
 				276ECA1D22CDDFCA00D9B822 /* NonEmpty+Array.swift in Sources */,
+				27686F0322D3B8A2008AF596 /* ValidationRuleLess.swift in Sources */,
 				276ECA2022CDDFCA00D9B822 /* NonEmpty+RangeReplaceableCollection.swift in Sources */,
 				272419E122CF857600BB82A8 /* ValidationRule.swift in Sources */,
 				276EC9E522CDD89F00D9B822 /* NSOperationQueue+BrightFutures.swift in Sources */,
+				27686EF622D3B09C008AF596 /* EqualInputError.swift in Sources */,
 				27241A2322CF86AB00BB82A8 /* EmptyCheckable.swift in Sources */,
 				272419FD22CF861A00BB82A8 /* ValidationRuleTextCharacterSet.swift in Sources */,
+				27686EF522D3B075008AF596 /* CompareInputError.swift in Sources */,
 				27241A3322CF88B400BB82A8 /* ValidationPatternContainUpperCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -758,6 +825,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				276EC90522CDD48600D9B822 /* SharedTests.swift in Sources */,
+				27686F0922D3BB68008AF596 /* RuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

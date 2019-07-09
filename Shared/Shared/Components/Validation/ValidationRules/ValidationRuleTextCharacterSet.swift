@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct ValidationRuleTextCharacterSet<Error>: ValidationRule {
+public struct ValidationRuleTextCharacterSet<Error>: ValidationRule where Error: Swift.Error {
     
     public let characterSet: CharacterSet
     public let error: Error

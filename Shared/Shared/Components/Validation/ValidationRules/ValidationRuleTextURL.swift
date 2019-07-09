@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct ValidationRuleTextURL<Error>: ValidationRule {
+public struct ValidationRuleTextURL<Error>: ValidationRule where Error: Swift.Error {
     
     public let error: Error
     

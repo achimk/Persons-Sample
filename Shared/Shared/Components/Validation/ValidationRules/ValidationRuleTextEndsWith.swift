@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct ValidationRuleTextPattern<Error>: ValidationRule {
+public struct ValidationRuleTextEndsWith<Error>: ValidationRule where Error: Swift.Error {
     
     public let pattern: String
     public let error: Error
@@ -17,6 +17,7 @@ public struct ValidationRuleTextPattern<Error>: ValidationRule {
     
     public func validate(_ value: String?) -> Bool {
         guard let value = value else { return false }
-        return NSPredicate(format: "SELF MATCHES %@", pattern).evaluate(with: value)
+        return NSPredicate(format: "SELF ENDSWITH %@", pattern).evaluate(with: value)
     }
+    
 }

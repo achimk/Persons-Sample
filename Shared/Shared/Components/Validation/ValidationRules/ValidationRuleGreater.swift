@@ -1,11 +1,11 @@
 //
-//  Created by Joachim Kret on 05/07/2019.
+//  Created by Joachim Kret on 08/07/2019.
 //  Copyright © 2019 Joachim Kret. All rights reserved.
 //
 
 import Foundation
 
-public struct ValidationRuleMin<Value: Comparable, Error>: ValidationRule {
+public struct ValidationRuleGreater<Value: Comparable, Error>: ValidationRule where Error: Swift.Error {
     
     public let dynamicTarget: () -> Value
     public let error: Error
@@ -22,6 +22,6 @@ public struct ValidationRuleMin<Value: Comparable, Error>: ValidationRule {
     
     public func validate(_ value: Value?) -> Bool {
         guard let value = value else { return false }
-        return value >= dynamicTarget()
+        return value > dynamicTarget()
     }
 }

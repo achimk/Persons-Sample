@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct ValidationRuleTextLengthMin<Error>: ValidationRule {
+public struct ValidationRuleTextLengthMax<Error>: ValidationRule where Error: Swift.Error {
     
     public let length: UInt
     public let type: TextInput.Length
@@ -22,6 +22,7 @@ public struct ValidationRuleTextLengthMin<Error>: ValidationRule {
     
     public func validate(_ value: String?) -> Bool {
         guard let value = value else { return false }
-        return type.length(value) >= length
+        return type.length(value) <= length
     }
 }
+

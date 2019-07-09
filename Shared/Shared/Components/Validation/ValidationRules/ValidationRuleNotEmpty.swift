@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct ValidationRuleNotEmpty<Value: EmptyCheckable, Error>: ValidationRule {
+public struct ValidationRuleNotEmpty<Value: EmptyCheckable, Error>: ValidationRule where Error: Swift.Error {
     
     public let error: Error
     

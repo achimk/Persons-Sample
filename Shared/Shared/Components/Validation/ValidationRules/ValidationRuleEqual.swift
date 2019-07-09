@@ -5,9 +5,9 @@
 
 import Foundation
 
-public struct ValidationRuleMax<Value: Comparable, Error>: ValidationRule {
+public struct ValidationRuleEqual<Value: Equatable, Error>: ValidationRule where Error: Swift.Error {
     
-    public let dynamicTarget: () -> Value
+    public let dynamicTarget: () -> Value?
     public let error: Error
     
     public init(target: Value, error: Error) {
@@ -15,13 +15,12 @@ public struct ValidationRuleMax<Value: Comparable, Error>: ValidationRule {
         self.error = error
     }
     
-    public init(dynamicTarget: @escaping () -> Value, error: Error) {
+    public init(dynamicTarget: @escaping () -> Value?, error: Error) {
         self.dynamicTarget = dynamicTarget
         self.error = error
     }
     
     public func validate(_ value: Value?) -> Bool {
-        guard let value = value else { return false }
-        return value <= dynamicTarget()
+        return value == dynamicTarget()
     }
 }

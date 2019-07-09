@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct ValidationRuleCondition<Value, Error>: ValidationRule {
+public struct ValidationRuleCondition<Value, Error>: ValidationRule where Error: Swift.Error {
     
     public let error: Error
     public let condition: (Value?) -> Bool

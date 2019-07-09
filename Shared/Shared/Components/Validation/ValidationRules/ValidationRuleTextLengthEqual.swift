@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct ValidationRuleTextLengthEqual<Error>: ValidationRule {
+public struct ValidationRuleTextLengthEqual<Error>: ValidationRule where Error: Swift.Error {
     
     public let length: UInt
     public let type: TextInput.Length
