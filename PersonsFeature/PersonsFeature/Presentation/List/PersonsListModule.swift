@@ -10,7 +10,7 @@ import Foundation
 
 public protocol PersonsListModule {
     
-    func attach(_ ui: PersonsListUserInterface, wireframe: PersonsListWireframe)
+    func attach(ui: PersonsListUserInterface, wireframe: PersonsListWireframe)
     
     func detach()
 }

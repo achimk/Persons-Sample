@@ -86,6 +86,10 @@
 		2791C3BC22D61AEB004E8493 /* SubmitPersonFormFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3BB22D61AEB004E8493 /* SubmitPersonFormFactory.swift */; };
 		2791C3BE22D61CC6004E8493 /* CreatePersonFeatureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3BD22D61CC6004E8493 /* CreatePersonFeatureFactory.swift */; };
 		2791C3C022D61D79004E8493 /* UpdatePersonFeatureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3BF22D61D79004E8493 /* UpdatePersonFeatureFactory.swift */; };
+		2791C3EF22D646CD004E8493 /* PersonsListTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3EE22D646CD004E8493 /* PersonsListTypes.swift */; };
+		2791C3F122D64798004E8493 /* DeletePersonsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3F022D64798004E8493 /* DeletePersonsListPresenter.swift */; };
+		2791C3F322D64826004E8493 /* DeletePersonsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3F222D64826004E8493 /* DeletePersonsListModel.swift */; };
+		2791C3F522D64B2D004E8493 /* DeletePersonsListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3F422D64B2D004E8493 /* DeletePersonsListFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +182,10 @@
 		2791C3BB22D61AEB004E8493 /* SubmitPersonFormFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitPersonFormFactory.swift; sourceTree = "<group>"; };
 		2791C3BD22D61CC6004E8493 /* CreatePersonFeatureFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePersonFeatureFactory.swift; sourceTree = "<group>"; };
 		2791C3BF22D61D79004E8493 /* UpdatePersonFeatureFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonFeatureFactory.swift; sourceTree = "<group>"; };
+		2791C3EE22D646CD004E8493 /* PersonsListTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListTypes.swift; sourceTree = "<group>"; };
+		2791C3F022D64798004E8493 /* DeletePersonsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePersonsListPresenter.swift; sourceTree = "<group>"; };
+		2791C3F222D64826004E8493 /* DeletePersonsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePersonsListModel.swift; sourceTree = "<group>"; };
+		2791C3F422D64B2D004E8493 /* DeletePersonsListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePersonsListFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -555,7 +563,9 @@
 			isa = PBXGroup;
 			children = (
 				275C1AB322D503D8001D9439 /* DisplayList */,
+				2791C3ED22D645F7004E8493 /* DeleteList */,
 				275C1AC322D5055E001D9439 /* PrepareList */,
+				2791C3EE22D646CD004E8493 /* PersonsListTypes.swift */,
 				275C1AB422D503F3001D9439 /* PersonsListModule.swift */,
 				275C1AB622D50453001D9439 /* PersonsListUserInterface.swift */,
 				275C1AB822D50466001D9439 /* PersonsListWireframe.swift */,
@@ -592,6 +602,16 @@
 				2791C3A322D5FE8A004E8493 /* PersonFormViewDataFactory.swift */,
 			);
 			path = ViewData;
+			sourceTree = "<group>";
+		};
+		2791C3ED22D645F7004E8493 /* DeleteList */ = {
+			isa = PBXGroup;
+			children = (
+				2791C3F022D64798004E8493 /* DeletePersonsListPresenter.swift */,
+				2791C3F222D64826004E8493 /* DeletePersonsListModel.swift */,
+				2791C3F422D64B2D004E8493 /* DeletePersonsListFactory.swift */,
+			);
+			path = DeleteList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -734,6 +754,7 @@
 				276ECAA922CE1F7300D9B822 /* Email.swift in Sources */,
 				276ECA9D22CE103E00D9B822 /* PersonEvent.swift in Sources */,
 				2755D04022D5A970008B7041 /* PersonsMapper.swift in Sources */,
+				2791C3F322D64826004E8493 /* DeletePersonsListModel.swift in Sources */,
 				2791C3AC22D603B3004E8493 /* PersonFormModel.swift in Sources */,
 				276ECA9122CE0D6B00D9B822 /* PersonsInteractor.swift in Sources */,
 				276ECA7922CE0BE600D9B822 /* UnvalidatedPerson.swift in Sources */,
@@ -766,8 +787,11 @@
 				2791C3B222D60F56004E8493 /* PreparePersonFormController.swift in Sources */,
 				2791C3A622D5FF0A004E8493 /* PersonFormPresenter.swift in Sources */,
 				2791C3B622D6134E004E8493 /* SubmitPersonFormPresenter.swift in Sources */,
+				2791C3F522D64B2D004E8493 /* DeletePersonsListFactory.swift in Sources */,
 				275C1ACB22D505DC001D9439 /* PreparePersonsListModel.swift in Sources */,
+				2791C3EF22D646CD004E8493 /* PersonsListTypes.swift in Sources */,
 				2791C3BE22D61CC6004E8493 /* CreatePersonFeatureFactory.swift in Sources */,
+				2791C3F122D64798004E8493 /* DeletePersonsListPresenter.swift in Sources */,
 				276ECA8A22CE0CE300D9B822 /* DeletePersonUseCase.swift in Sources */,
 				2755D03E22D5A968008B7041 /* PersonsResponse.swift in Sources */,
 				2791C39C22D5FCF0004E8493 /* PersonFormViewData.swift in Sources */,

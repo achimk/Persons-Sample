@@ -10,7 +10,12 @@ import Foundation
 
 final class PersonsListController {
     
+    private let model: PersonsListModel
     private weak var wireframe: PersonsListWireframe?
+    
+    init(model: PersonsListModel) {
+        self.model = model
+    }
     
     func attach(wireframe: PersonsListWireframe) {
         self.wireframe = wireframe
@@ -20,8 +25,12 @@ final class PersonsListController {
         self.wireframe = nil
     }
     
-    func selected(_ person: Person) {
+    func select(_ person: Person) {
         let context = PersonContext(id: person.id)
         wireframe?.selectedPerson(with: context)
+    }
+    
+    func delete(_ person: Person) {
+        model.delete(person)
     }
 }

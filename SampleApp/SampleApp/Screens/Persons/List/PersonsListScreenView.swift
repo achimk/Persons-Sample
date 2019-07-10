@@ -23,7 +23,7 @@ final class PersonsListScreenView: TableViewController {
         super.viewDidLoad()
         prepareView()
         prepareNavigationItems()
-        module.attach(self, wireframe: self)
+        module.attach(ui: self, wireframe: self)
     }
     
     private func prepareView() {

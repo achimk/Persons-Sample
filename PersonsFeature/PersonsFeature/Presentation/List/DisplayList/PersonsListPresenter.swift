@@ -25,7 +25,7 @@ final class PersonsListPresenter {
 
 extension PersonsListPresenter: PersonsListModule {
     
-    func attach(_ ui: PersonsListUserInterface, wireframe: PersonsListWireframe) {
+    func attach(ui: PersonsListUserInterface, wireframe: PersonsListWireframe) {
         self.ui = ui
         self.wireframe = wireframe
         self.controller.attach(wireframe: wireframe)

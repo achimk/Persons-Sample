@@ -10,17 +10,15 @@ import Foundation
 import AppCore
 import Shared
 
-typealias PersonsConsumer = (Result<[Person], ApplicationError>) -> ()
-
 struct PersonsListFactory {
     
-    static func create() -> (module: PersonsListModule, consumer: PersonsConsumer) {
+    static func create(deleteConsumer: @escaping PersonsDeleteConsumer) -> (module: PersonsListModule, consumer: PersonsConsumer) {
         
-        let controller = PersonsListController()
+        let model = PersonsListModel(deleteConsumer: deleteConsumer)
+        
+        let controller = PersonsListController(model: model)
         
         let presenter = PersonsListPresenter(controller: controller)
-        
-        let model = PersonsListModel()
         
         model.listener = presenter
         

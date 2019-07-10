@@ -19,11 +19,17 @@ protocol PersonsListModelResponse: class {
 
 final class PersonsListModel {
     
+    private let deleteConsumer: PersonsDeleteConsumer
+    
     private var state: PersonsListState = .idle {
         didSet { notifyDidUpdate(state) }
     }
     
     weak var listener: PersonsListModelResponse?
+    
+    init(deleteConsumer: @escaping PersonsDeleteConsumer) {
+        self.deleteConsumer = deleteConsumer
+    }
     
     func prepare(with result: Result<[Person], ApplicationError>) {
         result.onSuccess { (persons) in
@@ -32,6 +38,10 @@ final class PersonsListModel {
         result.onFailure { error in
             self.state = .failure(error)
         }
+    }
+    
+    func delete(_ person: Person) {
+        deleteConsumer(NonEmptyArray(person.id))
     }
     
     private func notifyDidUpdate(_ state: PersonsListState) {

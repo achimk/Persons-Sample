@@ -33,12 +33,20 @@ final class PersonsListDataSourceAdapter: NSObject {
 extension PersonsListDataSourceAdapter: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        item(at: indexPath).handler?()
+        item(at: indexPath).selectHandler?()
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 88
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let action = UITableViewRowAction(style: .normal, title: NSLocalizedString("Delete", comment: "")) { [weak self] (_, indexPath) in
+            self?.item(at: indexPath).deleteHandler?()
+        }
+        action.backgroundColor = Theme.Color.accent
+        return [action]
     }
 }
 

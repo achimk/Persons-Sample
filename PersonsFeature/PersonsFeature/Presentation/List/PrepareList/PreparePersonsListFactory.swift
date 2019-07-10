@@ -10,16 +10,15 @@ import Foundation
 import AppCore
 import Shared
 
-typealias PersonsListProvider = () -> Future<[Person], ApplicationError>
-typealias PersonsListEventSubscriber = (EventListener) -> ()
-
 struct PreparePersonsListFactory {
     
-    static func create(provider: @escaping PersonsListProvider, subscriber: PersonsListEventSubscriber) -> PersonsListModule {
+    static func create(personsProvider: @escaping PersonsListProvider,
+                       deleteProvider: @escaping PersonsDeleteProvider,
+                       subscriber: PersonsListEventSubscriber) -> PersonsListModule {
         
-        let (module, consumer) = PersonsListFactory.create()
+        let (module, consumer) = DeletePersonsListFactory.create(provider: deleteProvider)
         
-        let model = PreparePersonsListModel(provider: provider)
+        let model = PreparePersonsListModel(provider: personsProvider)
         
         let controller = PreparePersonsListController(model: model)
         

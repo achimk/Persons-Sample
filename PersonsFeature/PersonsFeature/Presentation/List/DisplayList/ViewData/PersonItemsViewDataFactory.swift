@@ -22,10 +22,18 @@ struct PersonItemsViewDataFactory {
         let title = [person.name, person.surname].joined(separator: " ")
         let description = person.email.value
         
-        let handler: PersonItemViewData.Handler = { [controller] in
-            controller.selected(person)
+        let selectHandler: PersonItemViewData.SelectHandler = { [controller] in
+            controller.select(person)
         }
         
-        return PersonItemViewData(title: title, description: description, handler: handler)
+        let deleteHandler: PersonItemViewData.DeleteHandler = { [controller] in
+            controller.delete(person)
+        }
+        
+        return PersonItemViewData(
+            title: title,
+            description: description,
+            selectHandler: selectHandler,
+            deleteHandler: deleteHandler)
     }
 }

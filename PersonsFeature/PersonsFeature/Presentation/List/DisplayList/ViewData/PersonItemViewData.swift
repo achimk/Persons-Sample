@@ -10,9 +10,11 @@ import Foundation
 
 public struct PersonItemViewData {
     
-    public typealias Handler = () -> ()
+    public typealias SelectHandler = () -> ()
+    public typealias DeleteHandler = () -> ()
     
-    public let title: String
-    public let description: String
-    public let handler: Handler?
+    public var title: String
+    public var description: String
+    public var selectHandler: SelectHandler?
+    public var deleteHandler: DeleteHandler?
 }

@@ -1,8 +1,8 @@
 //
-//  PreparePersonsListPresenter.swift
+//  DeletePersonsListPresenter.swift
 //  PersonsFeature
 //
-//  Created by Joachim Kret on 09/07/2019.
+//  Created by Joachim Kret on 10/07/2019.
 //  Copyright © 2019 Joachim Kret. All rights reserved.
 //
 
@@ -11,42 +11,35 @@ import Shared
 import AppCore
 import AdaptersCore
 
-final class PreparePersonsListPresenter {
+final class DeletePersonsListPresenter {
     
-    private let consumer: PersonsConsumer
     private let module: PersonsListModule
-    private let controller: PreparePersonsListController
-    private let prepareProgress = Once.Lock()
+    private let submitProgress = Once.Lock()
     private let progress = DebounceCounter()
     
     private weak var ui: PersonsListUserInterface?
     private weak var wireframe: PersonsListWireframe?
     
-    init(module: PersonsListModule, controller: PreparePersonsListController, consumer: @escaping PersonsConsumer) {
-        self.consumer = consumer
+    init(module: PersonsListModule) {
         self.module = module
-        self.controller = controller
     }
 }
 
-extension PreparePersonsListPresenter: PersonsListModule {
-    
+extension DeletePersonsListPresenter: PersonsListModule {
     func attach(ui: PersonsListUserInterface, wireframe: PersonsListWireframe) {
         self.ui = ui
         self.wireframe = wireframe
         self.module.attach(ui: self, wireframe: self)
-        self.controller.attach()
     }
     
     func detach() {
-        self.controller.detach()
-        self.module.detach()
+        module.detach()
         wireframe = nil
         ui = nil
     }
 }
 
-extension PreparePersonsListPresenter: PersonsListUserInterface {
+extension DeletePersonsListPresenter: PersonsListUserInterface {
     
     func present(viewData: PersonItemsViewData) {
         tellUserInterfaceToPresentViewData(viewData)
@@ -65,42 +58,46 @@ extension PreparePersonsListPresenter: PersonsListUserInterface {
     }
 }
 
-extension PreparePersonsListPresenter: PersonsListWireframe {
+extension DeletePersonsListPresenter: PersonsListWireframe {
     
     func selectedPerson(with context: PersonContext) {
         wireframe?.selectedPerson(with: context)
     }
 }
 
-extension PreparePersonsListPresenter: PreparePersonsListModelResponse {
+extension DeletePersonsListPresenter: DeletePersonsListModelResponse {
     
-    func didUpdate(with state: PreparePersonsListState) {
-        
+    func didUpdate(with state: DataState<NonEmptyArray<PersonId>, ApplicationError>) {
         switch state {
         case .idle:
             break
         case .processing:
-            prepareProgress.lock {
-                presentProgress()
+            submitProgress.lock {
+                tellUserInterfaceToPresentProgress()
             }
-        case .success(let data):
-            prepareProgress.unlock {
-                dismissProgress()
+        case .success(let ids):
+            submitProgress.unlock {
+                tellUserInterfaceToDismissProgress()
             }
-            consumer(.success(data))
+            tellWireframeDeletedPersons(ids)
         case .failure(let error):
-            prepareProgress.unlock {
-                dismissProgress()
+            submitProgress.unlock {
+                tellUserInterfaceToDismissProgress()
             }
-            consumer(.failure(error))
+            tellUserInterfaceToPresentError(error)
         }
     }
 }
 
-extension PreparePersonsListPresenter {
+extension DeletePersonsListPresenter {
     
     private func tellUserInterfaceToPresentViewData(_ viewData: PersonItemsViewData) {
         ui?.present(viewData: viewData)
+    }
+    
+    private func tellUserInterfaceToPresentError(_ error: ApplicationError) {
+        // FIXME: Present error to UI!
+        print("-> error: \(error)")
     }
     
     private func tellUserInterfaceToPresentError(_ viewData: ErrorViewData) {
@@ -120,3 +117,9 @@ extension PreparePersonsListPresenter {
     }
 }
 
+extension DeletePersonsListPresenter {
+    
+    private func tellWireframeDeletedPersons(_ ids: NonEmptyArray<PersonId>) {
+        // FIXME: Call wireframe!
+    }
+}

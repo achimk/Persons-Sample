@@ -19,7 +19,11 @@ public struct PersonsListFeatureFactory {
         
         let interactor = PersonsInteractorFactory.create()
         
-        let module = PreparePersonsListFactory.create(provider: interactor.getAllPersons, subscriber: subscriber)
+        let personsProvider: PersonsListProvider = interactor.getAllPersons
+        
+        let deleteProvider: PersonsDeleteProvider = interactor.delete(with:)
+        
+        let module = PreparePersonsListFactory.create(personsProvider: personsProvider, deleteProvider: deleteProvider, subscriber: subscriber)
         
         return module
     }
