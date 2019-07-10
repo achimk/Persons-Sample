@@ -13,6 +13,7 @@ import AdaptersCore
 
 final class SubmitPersonFormPresenter {
     
+    private let localizer: PersonFormLocalizing
     private let module: PersonFormModule
     private let errorsConsumer: PersonFormErrorsConsumer
     private let submitProgress = Once.Lock()
@@ -21,7 +22,11 @@ final class SubmitPersonFormPresenter {
     private weak var ui: PersonFormUserInterface?
     private weak var wireframe: PersonFormWireframe?
     
-    init(module: PersonFormModule, errorsConsumer: @escaping PersonFormErrorsConsumer) {
+    init(localizer: PersonFormLocalizing,
+         module: PersonFormModule,
+         errorsConsumer: @escaping PersonFormErrorsConsumer) {
+        
+        self.localizer = localizer
         self.module = module
         self.errorsConsumer = errorsConsumer
     }
@@ -114,8 +119,8 @@ extension SubmitPersonFormPresenter {
     }
     
     private func tellUserInterfaceToPresentError(_ error: ApplicationError) {
-        // FIXME: Present error to UI!
-        print("-> error: \(error)")
+        let viewData = ApplicationErrorViewDataFactory(error: error, localizer: localizer).create()
+        ui?.present(error: viewData)
     }
     
     private func tellUserInterfaceToPresentError(_ viewData: ErrorViewData) {

@@ -14,9 +14,13 @@ struct PersonsListScreenViewFactory {
     
     static func create(with delegate: PersonsListScreenViewDelegate? = nil) -> ScreenType {
         
+        let localizer = PersonsListScreenViewLocalizer()
+        
         let screen = PersonsListScreenView()
         screen.delegate = delegate
-        screen.module = PersonsListFeatureFactory.create(with: AppCore.Application.context)
+        screen.module = PersonsListFeatureFactory.create(
+            with: AppCore.Application.context,
+            localizer: localizer)
         
         return screen
     }

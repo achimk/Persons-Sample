@@ -12,13 +12,13 @@ import Shared
 
 struct PersonsListFactory {
     
-    static func create(deleteConsumer: @escaping PersonsDeleteConsumer) -> (module: PersonsListModule, consumer: PersonsConsumer) {
+    static func create(localizer: PersonsListLocalizing, deleteConsumer: @escaping PersonsDeleteConsumer) -> (module: PersonsListModule, consumer: PersonsConsumer) {
         
         let model = PersonsListModel(deleteConsumer: deleteConsumer)
         
         let controller = PersonsListController(model: model)
         
-        let presenter = PersonsListPresenter(controller: controller)
+        let presenter = PersonsListPresenter(localizer: localizer, controller: controller)
         
         model.listener = presenter
         

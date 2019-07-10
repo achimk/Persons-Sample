@@ -25,7 +25,11 @@ struct PreparePersonFormFactory {
         
         let controller = PreparePersonFormController(dataStore: dataStore)
         
-        let presenter = PreparePersonFormPresenter(controller: controller, module: response.module, dataConsumer: response.dataConsumer)
+        let presenter = PreparePersonFormPresenter(
+            localizer: localizer,
+            controller: controller,
+            module: response.module,
+            dataConsumer: response.dataConsumer)
         
         dataStore.subscribe { [weak presenter] (oldState, newState) in
             presenter?.handle(newState)

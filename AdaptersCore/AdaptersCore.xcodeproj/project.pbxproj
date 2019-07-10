@@ -24,6 +24,7 @@
 		275C1B1722D5166A001D9439 /* MessageViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B1622D5166A001D9439 /* MessageViewData.swift */; };
 		2791C39F22D5FDE4004E8493 /* ApplicationErrorLocalizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C39E22D5FDE4004E8493 /* ApplicationErrorLocalizing.swift */; };
 		2791C3A122D5FE07004E8493 /* ValidationErrorLocalizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3A022D5FE07004E8493 /* ValidationErrorLocalizing.swift */; };
+		2791C3F822D64F8B004E8493 /* ApplicationErrorViewDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3F722D64F8B004E8493 /* ApplicationErrorViewDataFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		275C1B1622D5166A001D9439 /* MessageViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewData.swift; sourceTree = "<group>"; };
 		2791C39E22D5FDE4004E8493 /* ApplicationErrorLocalizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationErrorLocalizing.swift; sourceTree = "<group>"; };
 		2791C3A022D5FE07004E8493 /* ValidationErrorLocalizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationErrorLocalizing.swift; sourceTree = "<group>"; };
+		2791C3F722D64F8B004E8493 /* ApplicationErrorViewDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationErrorViewDataFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		275C1AE422D50B5D001D9439 /* AdaptersCore */ = {
 			isa = PBXGroup;
 			children = (
+				2791C3F622D64F79004E8493 /* Factories */,
 				2791C39D22D5FDD3004E8493 /* Localizers */,
 				275C1B0722D50CB1001D9439 /* ViewData */,
 				275C1B0222D50BCB001D9439 /* DataStore */,
@@ -167,6 +170,14 @@
 				2791C3A022D5FE07004E8493 /* ValidationErrorLocalizing.swift */,
 			);
 			path = Localizers;
+			sourceTree = "<group>";
+		};
+		2791C3F622D64F79004E8493 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				2791C3F722D64F8B004E8493 /* ApplicationErrorViewDataFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				275C1B0922D50CC0001D9439 /* ActionViewData.swift in Sources */,
 				275C1B0D22D50D15001D9439 /* OptionViewData.swift in Sources */,
 				275C1B0B22D50CE0001D9439 /* ErrorViewData.swift in Sources */,
+				2791C3F822D64F8B004E8493 /* ApplicationErrorViewDataFactory.swift in Sources */,
 				275C1B0422D50BE5001D9439 /* DataState.swift in Sources */,
 				275C1B1322D5122D001D9439 /* TextFieldViewData.swift in Sources */,
 			);

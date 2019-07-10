@@ -8,17 +8,20 @@
 
 import Foundation
 import AppCore
+import AdaptersCore
 import Shared
 
 final class PersonsListPresenter {
     
+    private let localizer: PersonsListLocalizing
     private let controller: PersonsListController
     private let progress = Once.Lock()
     
     private weak var ui: PersonsListUserInterface?
     private weak var wireframe: PersonsListWireframe?
     
-    init(controller: PersonsListController) {
+    init(localizer: PersonsListLocalizing, controller: PersonsListController) {
+        self.localizer = localizer
         self.controller = controller
     }
 }
@@ -65,8 +68,8 @@ extension PersonsListPresenter {
     }
     
     private func tellUserInterfaceToPresentError(_ error: ApplicationError) {
-        // FIXME: Present error to UI!
-        print("-> error: \(error)")
+        let viewData = ApplicationErrorViewDataFactory(error: error, localizer: localizer).create()
+        ui?.present(error: viewData)
     }
     
     private func tellUserInterfaceToPresentProgress() {

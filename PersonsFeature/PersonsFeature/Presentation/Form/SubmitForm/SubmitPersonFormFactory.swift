@@ -22,7 +22,10 @@ struct SubmitPersonFormFactory {
         
         let response = PreparePersonFormFactory.create(localizer: localizer, provider: personProvider, submitter: submitter)
         
-        let presenter = SubmitPersonFormPresenter(module: response.module, errorsConsumer: response.errorsConsumer)
+        let presenter = SubmitPersonFormPresenter(
+            localizer: localizer,
+            module: response.module,
+            errorsConsumer: response.errorsConsumer)
         
         model.listener = presenter
         

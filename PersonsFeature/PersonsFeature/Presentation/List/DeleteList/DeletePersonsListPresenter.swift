@@ -13,6 +13,7 @@ import AdaptersCore
 
 final class DeletePersonsListPresenter {
     
+    private let localizer: PersonsListLocalizing
     private let module: PersonsListModule
     private let submitProgress = Once.Lock()
     private let progress = DebounceCounter()
@@ -20,7 +21,8 @@ final class DeletePersonsListPresenter {
     private weak var ui: PersonsListUserInterface?
     private weak var wireframe: PersonsListWireframe?
     
-    init(module: PersonsListModule) {
+    init(localizer: PersonsListLocalizing, module: PersonsListModule) {
+        self.localizer = localizer
         self.module = module
     }
 }
@@ -75,11 +77,10 @@ extension DeletePersonsListPresenter: DeletePersonsListModelResponse {
             submitProgress.lock {
                 tellUserInterfaceToPresentProgress()
             }
-        case .success(let ids):
+        case .success(_):
             submitProgress.unlock {
                 tellUserInterfaceToDismissProgress()
             }
-            tellWireframeDeletedPersons(ids)
         case .failure(let error):
             submitProgress.unlock {
                 tellUserInterfaceToDismissProgress()
@@ -96,8 +97,8 @@ extension DeletePersonsListPresenter {
     }
     
     private func tellUserInterfaceToPresentError(_ error: ApplicationError) {
-        // FIXME: Present error to UI!
-        print("-> error: \(error)")
+        let viewData = ApplicationErrorViewDataFactory(error: error, localizer: localizer).create()
+        ui?.present(error: viewData)
     }
     
     private func tellUserInterfaceToPresentError(_ viewData: ErrorViewData) {
@@ -114,12 +115,5 @@ extension DeletePersonsListPresenter {
         progress.finish {
             ui?.dismissProgress()
         }
-    }
-}
-
-extension DeletePersonsListPresenter {
-    
-    private func tellWireframeDeletedPersons(_ ids: NonEmptyArray<PersonId>) {
-        // FIXME: Call wireframe!
     }
 }

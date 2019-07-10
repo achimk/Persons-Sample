@@ -90,6 +90,7 @@
 		2791C3F122D64798004E8493 /* DeletePersonsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3F022D64798004E8493 /* DeletePersonsListPresenter.swift */; };
 		2791C3F322D64826004E8493 /* DeletePersonsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3F222D64826004E8493 /* DeletePersonsListModel.swift */; };
 		2791C3F522D64B2D004E8493 /* DeletePersonsListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3F422D64B2D004E8493 /* DeletePersonsListFactory.swift */; };
+		2791C3FA22D650A7004E8493 /* PersonsListLocalizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3F922D650A7004E8493 /* PersonsListLocalizing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +187,7 @@
 		2791C3F022D64798004E8493 /* DeletePersonsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePersonsListPresenter.swift; sourceTree = "<group>"; };
 		2791C3F222D64826004E8493 /* DeletePersonsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePersonsListModel.swift; sourceTree = "<group>"; };
 		2791C3F422D64B2D004E8493 /* DeletePersonsListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePersonsListFactory.swift; sourceTree = "<group>"; };
+		2791C3F922D650A7004E8493 /* PersonsListLocalizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListLocalizing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -566,6 +568,7 @@
 				2791C3ED22D645F7004E8493 /* DeleteList */,
 				275C1AC322D5055E001D9439 /* PrepareList */,
 				2791C3EE22D646CD004E8493 /* PersonsListTypes.swift */,
+				2791C3F922D650A7004E8493 /* PersonsListLocalizing.swift */,
 				275C1AB422D503F3001D9439 /* PersonsListModule.swift */,
 				275C1AB622D50453001D9439 /* PersonsListUserInterface.swift */,
 				275C1AB822D50466001D9439 /* PersonsListWireframe.swift */,
@@ -726,6 +729,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				276ECA8422CE0C8F00D9B822 /* GetPersonDetailsUseCase.swift in Sources */,
+				2791C3FA22D650A7004E8493 /* PersonsListLocalizing.swift in Sources */,
 				275C1B2A22D52C56001D9439 /* GetPersonDetailsMiddlewareGateway.swift in Sources */,
 				275C1AC722D505BC001D9439 /* PreparePersonsListPresenter.swift in Sources */,
 				276ECA7B22CE0BEF00D9B822 /* ValidatedPerson.swift in Sources */,

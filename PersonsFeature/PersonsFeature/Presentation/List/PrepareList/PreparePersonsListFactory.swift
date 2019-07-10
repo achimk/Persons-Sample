@@ -12,11 +12,12 @@ import Shared
 
 struct PreparePersonsListFactory {
     
-    static func create(personsProvider: @escaping PersonsListProvider,
+    static func create(localizer: PersonsListLocalizing,
+                       personsProvider: @escaping PersonsListProvider,
                        deleteProvider: @escaping PersonsDeleteProvider,
                        subscriber: PersonsListEventSubscriber) -> PersonsListModule {
         
-        let (module, consumer) = DeletePersonsListFactory.create(provider: deleteProvider)
+        let (module, consumer) = DeletePersonsListFactory.create(localizer: localizer, provider: deleteProvider)
         
         let model = PreparePersonsListModel(provider: personsProvider)
         

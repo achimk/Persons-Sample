@@ -10,7 +10,7 @@ import Foundation
 
 struct DeletePersonsListFactory {
     
-    static func create(provider: @escaping PersonsDeleteProvider) -> (module: PersonsListModule, consumer: PersonsConsumer) {
+    static func create(localizer: PersonsListLocalizing, provider: @escaping PersonsDeleteProvider) -> (module: PersonsListModule, consumer: PersonsConsumer) {
         
         let model = DeletePersonsListModel(provider: provider)
         
@@ -18,9 +18,9 @@ struct DeletePersonsListFactory {
             model.submit($0)
         }
         
-        let (module, consumer) = PersonsListFactory.create(deleteConsumer: deleteConsumer)
+        let (module, consumer) = PersonsListFactory.create(localizer: localizer, deleteConsumer: deleteConsumer)
         
-        let presenter = DeletePersonsListPresenter(module: module)
+        let presenter = DeletePersonsListPresenter(localizer: localizer, module: module)
         
         model.listener = presenter
         

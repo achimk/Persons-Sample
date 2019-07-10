@@ -13,6 +13,7 @@ import AdaptersCore
 
 final class PreparePersonFormPresenter {
     
+    private let localizer: PersonFormLocalizing
     private let module: PersonFormModule
     private let dataConsumer: PersonFormDataConsumer
     private let controller: PreparePersonFormController
@@ -22,7 +23,12 @@ final class PreparePersonFormPresenter {
     private weak var ui: PersonFormUserInterface?
     private weak var wireframe: PersonFormWireframe?
     
-    init(controller: PreparePersonFormController, module: PersonFormModule, dataConsumer: @escaping PersonFormDataConsumer) {
+    init(localizer: PersonFormLocalizing,
+         controller: PreparePersonFormController,
+         module: PersonFormModule,
+         dataConsumer: @escaping PersonFormDataConsumer) {
+        
+        self.localizer = localizer
         self.controller = controller
         self.module = module
         self.dataConsumer = dataConsumer
@@ -104,8 +110,8 @@ extension PreparePersonFormPresenter {
     }
     
     private func tellUserInterfaceToPresentError(_ error: ApplicationError) {
-        // FIXME: Present error to UI!
-        print("-> error: \(error)")
+        let viewData = ApplicationErrorViewDataFactory(error: error, localizer: localizer).create()
+        ui?.present(error: viewData)
     }
     
     private func tellUserInterfaceToPresentError(_ viewData: ErrorViewData) {

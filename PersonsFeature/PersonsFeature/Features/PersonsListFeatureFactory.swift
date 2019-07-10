@@ -11,7 +11,7 @@ import AppCore
 
 public struct PersonsListFeatureFactory {
     
-    public static func create(with app: Application) -> PersonsListModule {
+    public static func create(with app: Application, localizer: PersonsListLocalizing) -> PersonsListModule {
 
         let subscriber: (EventListener) -> () = {
             app.eventPublisher.subscribe($0)
@@ -23,7 +23,11 @@ public struct PersonsListFeatureFactory {
         
         let deleteProvider: PersonsDeleteProvider = interactor.delete(with:)
         
-        let module = PreparePersonsListFactory.create(personsProvider: personsProvider, deleteProvider: deleteProvider, subscriber: subscriber)
+        let module = PreparePersonsListFactory.create(
+            localizer: localizer,
+            personsProvider: personsProvider,
+            deleteProvider: deleteProvider,
+            subscriber: subscriber)
         
         return module
     }

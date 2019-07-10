@@ -88,6 +88,7 @@
 		2791C3E422D62A50004E8493 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3E322D62A50004E8493 /* UIStackView+Extensions.swift */; };
 		2791C3EA22D6386F004E8493 /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3E922D6386F004E8493 /* Bootstrap.swift */; };
 		2791C3EC22D638D6004E8493 /* Bootstrap+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3EB22D638D6004E8493 /* Bootstrap+UI.swift */; };
+		2791C3FC22D6514A004E8493 /* PersonsListScreenViewLocalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3FB22D6514A004E8493 /* PersonsListScreenViewLocalizer.swift */; };
 		CBD3EAB4BD3DFD49C5EB1CA3 /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46AE14EE30BD98F878E9156 /* Pods_SampleApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -209,6 +210,7 @@
 		2791C3E322D62A50004E8493 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		2791C3E922D6386F004E8493 /* Bootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bootstrap.swift; sourceTree = "<group>"; };
 		2791C3EB22D638D6004E8493 /* Bootstrap+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bootstrap+UI.swift"; sourceTree = "<group>"; };
+		2791C3FB22D6514A004E8493 /* PersonsListScreenViewLocalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListScreenViewLocalizer.swift; sourceTree = "<group>"; };
 		7DB7B025C83A3EA260B98639 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		B46AE14EE30BD98F878E9156 /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E6DD95AC869891605C1E26 /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -432,6 +434,7 @@
 				2791C37B22D5EF66004E8493 /* PersonsListDataSourceAdapter.swift */,
 				2791C35522D5E714004E8493 /* PersonsListScreenView.swift */,
 				2791C35722D5E72D004E8493 /* PersonsListScreenViewFactory.swift */,
+				2791C3FB22D6514A004E8493 /* PersonsListScreenViewLocalizer.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -783,6 +786,7 @@
 				2791C34722D5E213004E8493 /* UIView+TextInputFirstResponder.swift in Sources */,
 				2791C34D22D5E344004E8493 /* UIAlertController+Extensions.swift in Sources */,
 				2791C38622D5F314004E8493 /* RootFlowController.swift in Sources */,
+				2791C3FC22D6514A004E8493 /* PersonsListScreenViewLocalizer.swift in Sources */,
 				2791C36922D5E8DF004E8493 /* ModalPresenter+Screen.swift in Sources */,
 				2791C36722D5E8C7004E8493 /* ModalPresenter.swift in Sources */,
 				2791C30F22D5DE7A004E8493 /* Reusable.swift in Sources */,
