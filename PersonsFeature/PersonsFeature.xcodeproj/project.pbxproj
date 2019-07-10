@@ -340,7 +340,6 @@
 				275C1B1C22D51CFA001D9439 /* PersonsListFeatureFactory.swift */,
 				2791C3BD22D61CC6004E8493 /* CreatePersonFeatureFactory.swift */,
 				2791C3BF22D61D79004E8493 /* UpdatePersonFeatureFactory.swift */,
-				275C1B2022D52B64001D9439 /* PersonsInteractorFactory.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -458,6 +457,7 @@
 				276ECA9222CE0D8900D9B822 /* PersonsAPI.swift */,
 				276ECA9022CE0D6B00D9B822 /* PersonsInteractor.swift */,
 				276ECA9622CE0EF500D9B822 /* PersonsInteractorContainer.swift */,
+				275C1B2022D52B64001D9439 /* PersonsInteractorFactory.swift */,
 				276ECA9C22CE103E00D9B822 /* PersonEvent.swift */,
 			);
 			path = Interaction;
