@@ -12,7 +12,19 @@ import AppCore
 struct ApplicationErrorLocalizer {
     
     static func localized(applicationError: ApplicationError) -> String {
-        // FIXME: Implement!
-        return NSLocalizedString("Application error!", comment: "")
+        switch applicationError {
+        case .notFound:
+            return NSLocalizedString("Resource not found", comment: "")
+        case .accessDenied:
+            return NSLocalizedString("Access denied", comment: "")
+        case .accessRevoked:
+            return NSLocalizedString("Access revoked", comment: "")
+        case .connectionErrorOccured:
+            return NSLocalizedString("Connection error occured", comment: "")
+        case .unexpectedErrorOccurred:
+            return NSLocalizedString("Unexpected error occured", comment: "")
+        case .other(let error):
+            return error.localizedDescription
+        }
     }
 }

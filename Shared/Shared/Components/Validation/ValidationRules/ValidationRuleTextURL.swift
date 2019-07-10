@@ -7,6 +7,8 @@ import Foundation
 
 public struct ValidationRuleTextURL<Error>: ValidationRule where Error: Swift.Error {
     
+    private let urlRegEx = "^(https?://)?(www\\.)?([-a-z0-9]{1,63}\\.)*?[a-z0-9][-a-z0-9]{0,61}[a-z0-9]\\.[a-z]{2,6}(/[-\\w@\\+\\.~#\\?&/=%]*)?$"
+    
     public let error: Error
     
     public init(error: Error) {
@@ -15,7 +17,8 @@ public struct ValidationRuleTextURL<Error>: ValidationRule where Error: Swift.Er
     
     public func validate(_ value: String?) -> Bool {
         guard let value = value else { return false }
-        return URL(string: value) != nil
+        let urlTest = NSPredicate(format:"SELF MATCHES %@", urlRegEx)
+        return urlTest.evaluate(with: value)
     }
     
 }
