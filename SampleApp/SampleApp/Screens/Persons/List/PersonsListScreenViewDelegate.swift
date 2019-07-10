@@ -11,4 +11,5 @@ import PersonsFeature
 
 protocol PersonsListScreenViewDelegate: class {
     func personsListScreen(_ screen: PersonsListScreenView, didSelectPerson context: PersonContext)
+    func personsListScreenDidSelectAddPerson(_ screen: PersonsListScreenView)
 }

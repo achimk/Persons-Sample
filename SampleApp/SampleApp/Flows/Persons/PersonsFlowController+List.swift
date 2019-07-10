@@ -19,4 +19,8 @@ extension PersonsFlowController: PersonsListScreenViewDelegate {
     func personsListScreen(_ screen: PersonsListScreenView, didSelectPerson context: PersonContext) {
         presentUpdateScreen(context: context)
     }
+    
+    func personsListScreenDidSelectAddPerson(_ screen: PersonsListScreenView) {
+        presentCreateScreen()
+    }
 }

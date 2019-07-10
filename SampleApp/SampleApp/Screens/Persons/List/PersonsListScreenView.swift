@@ -22,12 +22,21 @@ final class PersonsListScreenView: TableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareView()
+        prepareNavigationItems()
         module.attach(self, wireframe: self)
     }
     
     private func prepareView() {
         title = NSLocalizedString("Persons", comment: "")
         dataSource.setup(with: tableView)
+    }
+    
+    private func prepareNavigationItems() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addPerson))
+    }
+    
+    @objc private func addPerson() {
+        delegate?.personsListScreenDidSelectAddPerson(self)
     }
 }
 
