@@ -11,10 +11,10 @@ import AppCore
 
 public struct PersonsListFeatureFactory {
     
-    public static func create() -> PersonsListModule {
-        
-        let subscriber: (EventListener) -> () = { _ in
-            // FIXME: Implement!
+    public static func create(with app: Application) -> PersonsListModule {
+
+        let subscriber: (EventListener) -> () = {
+            app.eventPublisher.subscribe($0)
         }
         
         let interactor = PersonsInteractorFactory.create()

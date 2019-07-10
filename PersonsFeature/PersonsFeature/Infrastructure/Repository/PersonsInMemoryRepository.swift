@@ -47,7 +47,7 @@ fileprivate func loadPersons() -> [Person] {
     
     func json(from file: String) throws -> Data {
         let bundle = Bundle(for: BundleLoader.self)
-        let path = bundle.path(forResource: file, ofType: "json")!
+        let path = bundle.path(forResource: file, ofType: "json") ?? ""
         let url = URL(fileURLWithPath: path)
         let data = try Data(contentsOf: url, options: .alwaysMapped)
         return data
