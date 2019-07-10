@@ -17,6 +17,6 @@ extension PersonsFlowController: PersonsListScreenViewDelegate {
     }
     
     func personsListScreen(_ screen: PersonsListScreenView, didSelectPerson context: PersonContext) {
-        print("-> selected: \(context)")
+        presentUpdateScreen(context: context)
     }
 }

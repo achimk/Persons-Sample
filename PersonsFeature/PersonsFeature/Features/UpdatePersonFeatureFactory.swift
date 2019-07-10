@@ -9,9 +9,9 @@
 import Foundation
 import Shared
 
-struct UpdatePersonFeatureFactory {
+public struct UpdatePersonFeatureFactory {
     
-    static func create(localizer: PersonFormLocalizing, context: PersonContext) -> PersonFormModule {
+    public static func create(localizer: PersonFormLocalizing, context: PersonContext) -> PersonFormModule {
         
         let interactor = PersonsInteractorFactory.create()
         
