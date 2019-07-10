@@ -21,6 +21,8 @@ final class GetPersonsMiddlewareGateway: GetPersonsGateway {
     }
     
     func getPersons() -> Future<[Person], ApplicationError> {
-        return Future.init(value: repository.all()).delay(delay)
+        return Future.init(resolver: { [repository] (resolver) in
+            resolver(.success(repository.all()))
+        }).delay(delay)
     }
 }

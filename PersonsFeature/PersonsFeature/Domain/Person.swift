@@ -27,7 +27,7 @@ extension Person {
             name: name,
             surname: surname,
             email: email.value,
-            age: age.map { String(describing: $0) },
+            age: age.map { "\($0.value)" },
             website: website.map { $0.url.absoluteString })
     }
 }

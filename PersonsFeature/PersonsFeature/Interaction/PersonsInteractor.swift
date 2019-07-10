@@ -36,7 +36,7 @@ final class PersonsInteractor: PersonsAPI {
         return UseCase.unauthorized().create { [container] (_) -> Future<[Person], ApplicationError> in
             
             // Also possible to call gateway directly:
-            // return container.getPersonsGateway()
+            // return container.getPersonsGateway.getPersons()
             
             return GetPersonsUseCase(gateway: container.getPersonsGateway).prepare()
         }

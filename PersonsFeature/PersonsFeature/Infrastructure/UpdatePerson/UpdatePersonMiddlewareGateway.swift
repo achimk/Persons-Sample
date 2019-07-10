@@ -22,7 +22,7 @@ final class UpdatePersonMiddlewareGateway: UpdatePersonGateway {
 
     func update(with id: PersonId, data: ValidatedPerson, token: AccessToken) -> Future<PersonId, ApplicationError> {
         
-        let person = Person.init(
+        let person = Person(
             id: id,
             name: data.name,
             surname: data.surname,

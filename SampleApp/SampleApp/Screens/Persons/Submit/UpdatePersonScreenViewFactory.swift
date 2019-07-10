@@ -16,7 +16,7 @@ struct UpdatePersonScreenViewFactory {
         let localizer = SubmitPersonScreenViewLocalizer()
         
         let screen = SubmitPersonScreenView()
-        screen.title = NSLocalizedString("Create", comment: "")
+        screen.title = NSLocalizedString("Update", comment: "")
         screen.module = UpdatePersonFeatureFactory.create(localizer: localizer, context: context)
         screen.delegate = delegate
         

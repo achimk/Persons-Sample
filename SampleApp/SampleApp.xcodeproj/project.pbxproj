@@ -86,6 +86,8 @@
 		2791C3E022D628EE004E8493 /* PersonsFlowController+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3DF22D628EE004E8493 /* PersonsFlowController+Update.swift */; };
 		2791C3E222D62920004E8493 /* PersonsFlowController+Submit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3E122D62920004E8493 /* PersonsFlowController+Submit.swift */; };
 		2791C3E422D62A50004E8493 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3E322D62A50004E8493 /* UIStackView+Extensions.swift */; };
+		2791C3EA22D6386F004E8493 /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3E922D6386F004E8493 /* Bootstrap.swift */; };
+		2791C3EC22D638D6004E8493 /* Bootstrap+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3EB22D638D6004E8493 /* Bootstrap+UI.swift */; };
 		CBD3EAB4BD3DFD49C5EB1CA3 /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46AE14EE30BD98F878E9156 /* Pods_SampleApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -205,6 +207,8 @@
 		2791C3DF22D628EE004E8493 /* PersonsFlowController+Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonsFlowController+Update.swift"; sourceTree = "<group>"; };
 		2791C3E122D62920004E8493 /* PersonsFlowController+Submit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonsFlowController+Submit.swift"; sourceTree = "<group>"; };
 		2791C3E322D62A50004E8493 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		2791C3E922D6386F004E8493 /* Bootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bootstrap.swift; sourceTree = "<group>"; };
+		2791C3EB22D638D6004E8493 /* Bootstrap+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bootstrap+UI.swift"; sourceTree = "<group>"; };
 		7DB7B025C83A3EA260B98639 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		B46AE14EE30BD98F878E9156 /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E6DD95AC869891605C1E26 /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -459,6 +463,8 @@
 				2791C38B22D5F6C5004E8493 /* Repositories */,
 				2791C38722D5F50F004E8493 /* ApplicationSetup.swift */,
 				2791C38922D5F61F004E8493 /* ApplicationContainerFactory.swift */,
+				2791C3E922D6386F004E8493 /* Bootstrap.swift */,
+				2791C3EB22D638D6004E8493 /* Bootstrap+UI.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -766,6 +772,7 @@
 				2791C3C922D62001004E8493 /* CreatePersonScreenViewFactory.swift in Sources */,
 				276EC98922CDD64A00D9B822 /* AppDelegate.swift in Sources */,
 				2791C3D422D6242A004E8493 /* SubmitPersonScreenViewComponents.swift in Sources */,
+				2791C3EC22D638D6004E8493 /* Bootstrap+UI.swift in Sources */,
 				2791C35622D5E714004E8493 /* PersonsListScreenView.swift in Sources */,
 				2791C3C322D61F7A004E8493 /* SubmitPersonScreenView.swift in Sources */,
 				2791C37A22D5ED6B004E8493 /* PersonsListScreenViewDelegate.swift in Sources */,
@@ -804,6 +811,7 @@
 				2791C3DE22D628E7004E8493 /* PersonsFlowController+Create.swift in Sources */,
 				2791C31422D5DEA6004E8493 /* NavigationController.swift in Sources */,
 				2791C34122D5E1B2004E8493 /* TextInputController.swift in Sources */,
+				2791C3EA22D6386F004E8493 /* Bootstrap.swift in Sources */,
 				2791C30122D5DE1B004E8493 /* UIColor+Hex.swift in Sources */,
 				2791C30E22D5DE7A004E8493 /* UICollectionView+Reusable.swift in Sources */,
 				2791C3D622D62657004E8493 /* TextField.swift in Sources */,

@@ -13,7 +13,9 @@ final class PersonsInMemoryRepository {
     
     private var persons: [Person] = []
     
-    init() {
+    static let shared = PersonsInMemoryRepository()
+    
+    private init() {
         persons = loadPersons()
     }
     
@@ -73,7 +75,7 @@ fileprivate func loadPersons() -> [Person] {
         persons = try "persons" |> json(from:) |> decode(data:) |> map(response:)
         
     } catch {
-        // noop
+        print("Error: Unable to load default data from file: \(error)")
     }
     
     return persons

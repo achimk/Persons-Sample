@@ -22,9 +22,9 @@ final class CreatePersonMiddlewareGateway: CreatePersonGateway {
     
     func create(with data: ValidatedPerson, token: AccessToken) -> Future<PersonId, ApplicationError> {
         
-        let id = PersonId.init(rawValue: UUID().uuidString)
+        let id = PersonId(rawValue: UUID().uuidString)
         
-        let person = Person.init(
+        let person = Person(
             id: id,
             name: data.name,
             surname: data.surname,

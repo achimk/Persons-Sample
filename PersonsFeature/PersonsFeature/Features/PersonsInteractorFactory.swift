@@ -13,7 +13,7 @@ struct PersonsInteractorFactory {
     static func create() -> PersonsInteractor {
         
         let delay: DispatchTimeInterval = .seconds(1)
-        let repository = PersonsInMemoryRepository()
+        let repository = PersonsInMemoryRepository.shared
         
         let container = PersonsInteractorContainer.init(
             getPersonsGateway: GetPersonsMiddlewareGateway(repository: repository, delay: delay),

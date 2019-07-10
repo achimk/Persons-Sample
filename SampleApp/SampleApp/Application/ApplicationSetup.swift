@@ -7,21 +7,23 @@
 //
 
 import Foundation
+import Shared
 import AppCore
 
 final class ApplicationSetup {
     
-    private var context: AppCore.Application?
+    private var once = Once.Token()
     
     static let shared = ApplicationSetup()
     
     private init() { }
     
     private func run(_ completed: () -> ()) {
-        guard context == nil else { return }
-        let container = ApplicationContainerFactory.create()
-        context = AppCore.Application.setup(with: container)
-        completed()
+        once.run {
+            let container = ApplicationContainerFactory.create()
+            AppCore.Application.setup(with: container)
+            completed()
+        }
     }
 }
 
@@ -30,6 +32,8 @@ extension ApplicationSetup {
     static func start(with application: UIApplication,
                       options launchOptions: [UIApplication.LaunchOptionsKey: Any]?,
                       completed: () -> ()) {
+        
+        Bootstrap.run()
         
         shared.run(completed)
     }

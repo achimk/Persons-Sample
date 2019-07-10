@@ -16,8 +16,8 @@ struct SubmitPersonFormFactory {
         
         let model = SubmitPersonFormModel(provider: personSubmitProvider)
         
-        let submitter: PersonSubmitter = { [weak model] in
-            model?.submit($0)
+        let submitter: PersonSubmitter = {
+            model.submit($0)
         }
         
         let response = PreparePersonFormFactory.create(localizer: localizer, provider: personProvider, submitter: submitter)

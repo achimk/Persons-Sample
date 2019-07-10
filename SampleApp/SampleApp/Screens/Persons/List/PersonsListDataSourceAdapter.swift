@@ -17,6 +17,8 @@ final class PersonsListDataSourceAdapter: NSObject {
     
     func setup(with tableView: UITableView) {
         tableView.register(cellType: SubtitleTableViewCell.self)
+        tableView.estimatedRowHeight = UITableView.automaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.delegate = self
         tableView.dataSource = self
         reloadData = { tableView.reloadData() }
@@ -33,6 +35,10 @@ extension PersonsListDataSourceAdapter: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         item(at: indexPath).handler?()
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 88
     }
 }
 
