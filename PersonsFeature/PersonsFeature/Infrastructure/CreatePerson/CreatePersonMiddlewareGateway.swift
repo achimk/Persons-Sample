@@ -12,9 +12,28 @@ import Shared
 
 final class CreatePersonMiddlewareGateway: CreatePersonGateway {
     
+    let repository: PersonsInMemoryRepository
+    let delay: DispatchTimeInterval
+    
+    init(repository: PersonsInMemoryRepository, delay: DispatchTimeInterval) {
+        self.repository = repository
+        self.delay = delay
+    }
+    
     func create(with data: ValidatedPerson, token: AccessToken) -> Future<PersonId, ApplicationError> {
         
-        // FIXME: Implement!
-        fatalError()
+        let id = PersonId.init(rawValue: UUID().uuidString)
+        
+        let person = Person.init(
+            id: id,
+            name: data.name,
+            surname: data.surname,
+            email: data.email,
+            age: data.age,
+            website: data.website)
+        
+        return Future.init(value: id).andThen { [repository] (_) in
+            repository.append(person)
+        }.delay(delay)
     }
 }

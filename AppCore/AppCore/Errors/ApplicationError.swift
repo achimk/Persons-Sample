@@ -10,6 +10,8 @@ import Foundation
 
 public enum ApplicationError: Swift.Error {
     
+    case notFound
+    
     case accessDenied
     
     case accessRevoked

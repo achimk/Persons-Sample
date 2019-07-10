@@ -1,5 +1,5 @@
 //
-//  GetPersonDetailsMiddlewareGateway.swift
+//  GetPersonsMiddlewareGateway.swift
 //  PersonsFeature
 //
 //  Created by Joachim Kret on 09/07/2019.
@@ -10,7 +10,7 @@ import Foundation
 import AppCore
 import Shared
 
-final class GetPersonDetailsMiddlewareGateway: GetPersonDetailsGateway {
+final class GetPersonsMiddlewareGateway: GetPersonsGateway {
     
     let repository: PersonsInMemoryRepository
     let delay: DispatchTimeInterval
@@ -20,9 +20,7 @@ final class GetPersonDetailsMiddlewareGateway: GetPersonDetailsGateway {
         self.delay = delay
     }
     
-    func getPersonDetails(for id: PersonId) -> Future<Person, ApplicationError> {
-        return Future.init(value: repository.find(with: id))
-            .flatMap { $0.map { .success($0) } ?? .failure(.notFound) }
-            .delay(delay)
+    func getPersons() -> Future<[Person], ApplicationError> {
+        return Future.init(value: repository.all()).delay(delay)
     }
 }

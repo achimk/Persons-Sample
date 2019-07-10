@@ -15,6 +15,10 @@
 		270F088222D467E800927D88 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F087922D464F900927D88 /* Shared.framework */; };
 		270F088422D46A1200927D88 /* UpdatePersonUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272419CD22CF80B900BB82A8 /* UpdatePersonUseCaseTests.swift */; };
 		270F088522D46A9600927D88 /* DeletePersonUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272419CF22CF810B00BB82A8 /* DeletePersonUseCaseTests.swift */; };
+		2755D03922D5A91B008B7041 /* persons.json in Resources */ = {isa = PBXBuildFile; fileRef = 2755D03822D5A91B008B7041 /* persons.json */; };
+		2755D03C22D5A949008B7041 /* PersonsInMemoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755D03B22D5A949008B7041 /* PersonsInMemoryRepository.swift */; };
+		2755D03E22D5A968008B7041 /* PersonsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755D03D22D5A968008B7041 /* PersonsResponse.swift */; };
+		2755D04022D5A970008B7041 /* PersonsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755D03F22D5A970008B7041 /* PersonsMapper.swift */; };
 		275C1AAC22D4DAC4001D9439 /* Age.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1AAB22D4DAC4001D9439 /* Age.swift */; };
 		275C1AB022D50103001D9439 /* Website.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1AAF22D50103001D9439 /* Website.swift */; };
 		275C1AB522D503F3001D9439 /* PersonsListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1AB422D503F3001D9439 /* PersonsListModule.swift */; };
@@ -36,7 +40,7 @@
 		275C1B1A22D5181F001D9439 /* AdaptersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275C1B1822D5180D001D9439 /* AdaptersCore.framework */; };
 		275C1B1D22D51CFA001D9439 /* PersonsListFeatureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B1C22D51CFA001D9439 /* PersonsListFeatureFactory.swift */; };
 		275C1B2122D52B64001D9439 /* PersonsInteractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B2022D52B64001D9439 /* PersonsInteractorFactory.swift */; };
-		275C1B2822D52C2F001D9439 /* GetPersonMiddlewareGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B2722D52C2F001D9439 /* GetPersonMiddlewareGateway.swift */; };
+		275C1B2822D52C2F001D9439 /* GetPersonsMiddlewareGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B2722D52C2F001D9439 /* GetPersonsMiddlewareGateway.swift */; };
 		275C1B2A22D52C56001D9439 /* GetPersonDetailsMiddlewareGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B2922D52C56001D9439 /* GetPersonDetailsMiddlewareGateway.swift */; };
 		275C1B2C22D52C85001D9439 /* CreatePersonMiddlewareGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B2B22D52C85001D9439 /* CreatePersonMiddlewareGateway.swift */; };
 		275C1B2E22D52CCA001D9439 /* UpdatePersonMiddlewareGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275C1B2D22D52CCA001D9439 /* UpdatePersonMiddlewareGateway.swift */; };
@@ -82,6 +86,10 @@
 		272419CB22CF7C0C00BB82A8 /* CreatePersonUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePersonUseCaseTests.swift; sourceTree = "<group>"; };
 		272419CD22CF80B900BB82A8 /* UpdatePersonUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonUseCaseTests.swift; sourceTree = "<group>"; };
 		272419CF22CF810B00BB82A8 /* DeletePersonUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePersonUseCaseTests.swift; sourceTree = "<group>"; };
+		2755D03822D5A91B008B7041 /* persons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = persons.json; sourceTree = "<group>"; };
+		2755D03B22D5A949008B7041 /* PersonsInMemoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsInMemoryRepository.swift; sourceTree = "<group>"; };
+		2755D03D22D5A968008B7041 /* PersonsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsResponse.swift; sourceTree = "<group>"; };
+		2755D03F22D5A970008B7041 /* PersonsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsMapper.swift; sourceTree = "<group>"; };
 		275C1AAB22D4DAC4001D9439 /* Age.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Age.swift; sourceTree = "<group>"; };
 		275C1AAF22D50103001D9439 /* Website.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Website.swift; sourceTree = "<group>"; };
 		275C1AB422D503F3001D9439 /* PersonsListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListModule.swift; sourceTree = "<group>"; };
@@ -102,7 +110,7 @@
 		275C1B1822D5180D001D9439 /* AdaptersCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AdaptersCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		275C1B1C22D51CFA001D9439 /* PersonsListFeatureFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListFeatureFactory.swift; sourceTree = "<group>"; };
 		275C1B2022D52B64001D9439 /* PersonsInteractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsInteractorFactory.swift; sourceTree = "<group>"; };
-		275C1B2722D52C2F001D9439 /* GetPersonMiddlewareGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonMiddlewareGateway.swift; sourceTree = "<group>"; };
+		275C1B2722D52C2F001D9439 /* GetPersonsMiddlewareGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonsMiddlewareGateway.swift; sourceTree = "<group>"; };
 		275C1B2922D52C56001D9439 /* GetPersonDetailsMiddlewareGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonDetailsMiddlewareGateway.swift; sourceTree = "<group>"; };
 		275C1B2B22D52C85001D9439 /* CreatePersonMiddlewareGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePersonMiddlewareGateway.swift; sourceTree = "<group>"; };
 		275C1B2D22D52CCA001D9439 /* UpdatePersonMiddlewareGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonMiddlewareGateway.swift; sourceTree = "<group>"; };
@@ -186,6 +194,25 @@
 			path = Queries;
 			sourceTree = "<group>";
 		};
+		2755D03722D5A84B008B7041 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				2755D03822D5A91B008B7041 /* persons.json */,
+				2755D03D22D5A968008B7041 /* PersonsResponse.swift */,
+				2755D03F22D5A970008B7041 /* PersonsMapper.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		2755D03A22D5A92F008B7041 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2755D03722D5A84B008B7041 /* Responses */,
+				2755D03B22D5A949008B7041 /* PersonsInMemoryRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		275C1AB122D503C8001D9439 /* Form */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,7 +290,7 @@
 		275C1B2222D52BC8001D9439 /* GetPersons */ = {
 			isa = PBXGroup;
 			children = (
-				275C1B2722D52C2F001D9439 /* GetPersonMiddlewareGateway.swift */,
+				275C1B2722D52C2F001D9439 /* GetPersonsMiddlewareGateway.swift */,
 			);
 			path = GetPersons;
 			sourceTree = "<group>";
@@ -346,6 +373,7 @@
 		276ECA7122CE0B6400D9B822 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				2755D03A22D5A92F008B7041 /* Repository */,
 				275C1B2622D52BEA001D9439 /* DeletePersons */,
 				275C1B2522D52BE4001D9439 /* UpdatePerson */,
 				275C1B2422D52BDA001D9439 /* CreatePerson */,
@@ -570,6 +598,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2755D03922D5A91B008B7041 /* persons.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +637,7 @@
 				276ECA8822CE0CD200D9B822 /* UpdatePersonUseCase.swift in Sources */,
 				276ECAA922CE1F7300D9B822 /* Email.swift in Sources */,
 				276ECA9D22CE103E00D9B822 /* PersonEvent.swift in Sources */,
+				2755D04022D5A970008B7041 /* PersonsMapper.swift in Sources */,
 				276ECA9122CE0D6B00D9B822 /* PersonsInteractor.swift in Sources */,
 				276ECA7922CE0BE600D9B822 /* UnvalidatedPerson.swift in Sources */,
 				275C1AD322D50732001D9439 /* PersonItemsViewDataFactory.swift in Sources */,
@@ -619,6 +649,7 @@
 				275C1AC922D505CA001D9439 /* PreparePersonsListController.swift in Sources */,
 				276ECAA722CE1C5E00D9B822 /* GetPersonsGateway.swift in Sources */,
 				276ECA9B22CE0F4C00D9B822 /* CreatePersonGateway.swift in Sources */,
+				2755D03C22D5A949008B7041 /* PersonsInMemoryRepository.swift in Sources */,
 				276ECA9522CE0EA100D9B822 /* UpdatePersonGateway.swift in Sources */,
 				276ECA9922CE0F1E00D9B822 /* DeletePersonGateway.swift in Sources */,
 				275C1ACD22D50601001D9439 /* PreparePersonsListFactory.swift in Sources */,
@@ -627,10 +658,11 @@
 				276ECA7722CE0BD900D9B822 /* Person.swift in Sources */,
 				275C1AD722D509E4001D9439 /* PersonContext.swift in Sources */,
 				275C1B2C22D52C85001D9439 /* CreatePersonMiddlewareGateway.swift in Sources */,
-				275C1B2822D52C2F001D9439 /* GetPersonMiddlewareGateway.swift in Sources */,
+				275C1B2822D52C2F001D9439 /* GetPersonsMiddlewareGateway.swift in Sources */,
 				276ECAA522CE1A5300D9B822 /* GetPersonDetailsGateway.swift in Sources */,
 				275C1ACB22D505DC001D9439 /* PreparePersonsListModel.swift in Sources */,
 				276ECA8A22CE0CE300D9B822 /* DeletePersonUseCase.swift in Sources */,
+				2755D03E22D5A968008B7041 /* PersonsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

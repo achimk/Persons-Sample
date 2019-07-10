@@ -12,12 +12,15 @@ struct PersonsInteractorFactory {
     
     static func create() -> PersonsInteractor {
         
+        let delay: DispatchTimeInterval = .seconds(1)
+        let repository = PersonsInMemoryRepository()
+        
         let container = PersonsInteractorContainer.init(
-            getPersonsGateway: GetPersonMiddlewareGateway(),
-            getPersonDetailsGateway: GetPersonDetailsMiddlewareGateway(),
-            createPersonGateway: CreatePersonMiddlewareGateway(),
-            updatePersonGateway: UpdatePersonMiddlewareGateway(),
-            deletePersonGateway: DeletePersonsMiddlewareGateway())
+            getPersonsGateway: GetPersonsMiddlewareGateway(repository: repository, delay: delay),
+            getPersonDetailsGateway: GetPersonDetailsMiddlewareGateway(repository: repository, delay: delay),
+            createPersonGateway: CreatePersonMiddlewareGateway(repository: repository, delay: delay),
+            updatePersonGateway: UpdatePersonMiddlewareGateway(repository: repository, delay: delay),
+            deletePersonGateway: DeletePersonsMiddlewareGateway(repository: repository, delay: delay))
         
         return PersonsInteractor(container: container)
     }
