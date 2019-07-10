@@ -9,9 +9,9 @@
 import Foundation
 
 struct UnvalidatedPerson {
-    let name: String?
-    let surname: String?
-    let email: String?
-    let age: String?
-    let website: String?
+    var name: String?
+    var surname: String?
+    var email: String?
+    var age: String?
+    var website: String?
 }

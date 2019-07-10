@@ -19,3 +19,15 @@ struct Person {
     let age: Age?
     let website: Website?
 }
+
+extension Person {
+    
+    func toUnvalidated() -> UnvalidatedPerson {
+        return UnvalidatedPerson(
+            name: name,
+            surname: surname,
+            email: email.value,
+            age: age.map { String(describing: $0) },
+            website: website.map { $0.url.absoluteString })
+    }
+}

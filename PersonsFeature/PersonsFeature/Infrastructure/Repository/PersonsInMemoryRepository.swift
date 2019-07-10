@@ -23,17 +23,20 @@ final class PersonsInMemoryRepository {
     
     func find(with id: PersonId) -> Person? { return persons.first(where: { $0.id == id}) }
     
+    @discardableResult
     func append(_ person: Person) -> Bool {
         persons.append(person)
         return true
     }
     
+    @discardableResult
     func update(_ person: Person, with id: PersonId) -> Bool {
         guard let index: Int = find(with: id) else { return false }
         persons[index] = person
         return true
     }
     
+    @discardableResult
     func remove(with id: PersonId) -> Bool {
         guard let index: Int = find(with: id) else { return false }
         persons.remove(at: index)

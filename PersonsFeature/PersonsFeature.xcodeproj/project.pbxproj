@@ -67,6 +67,25 @@
 		276ECAA522CE1A5300D9B822 /* GetPersonDetailsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECAA422CE1A5300D9B822 /* GetPersonDetailsGateway.swift */; };
 		276ECAA722CE1C5E00D9B822 /* GetPersonsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECAA622CE1C5E00D9B822 /* GetPersonsGateway.swift */; };
 		276ECAA922CE1F7300D9B822 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276ECAA822CE1F7300D9B822 /* Email.swift */; };
+		2791C39222D5FC77004E8493 /* PersonFormModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C39122D5FC77004E8493 /* PersonFormModule.swift */; };
+		2791C39422D5FC90004E8493 /* PersonFormUserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C39322D5FC90004E8493 /* PersonFormUserInterface.swift */; };
+		2791C39622D5FCA5004E8493 /* PersonFormWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C39522D5FCA5004E8493 /* PersonFormWireframe.swift */; };
+		2791C39C22D5FCF0004E8493 /* PersonFormViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C39B22D5FCF0004E8493 /* PersonFormViewData.swift */; };
+		2791C3A222D5FE49004E8493 /* PersonFormLocalizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C39922D5FCDF004E8493 /* PersonFormLocalizing.swift */; };
+		2791C3A422D5FE8A004E8493 /* PersonFormViewDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3A322D5FE8A004E8493 /* PersonFormViewDataFactory.swift */; };
+		2791C3A622D5FF0A004E8493 /* PersonFormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3A522D5FF0A004E8493 /* PersonFormPresenter.swift */; };
+		2791C3A822D5FF19004E8493 /* PersonFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3A722D5FF19004E8493 /* PersonFormController.swift */; };
+		2791C3AA22D5FF79004E8493 /* PersonFormTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3A922D5FF79004E8493 /* PersonFormTypes.swift */; };
+		2791C3AC22D603B3004E8493 /* PersonFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3AB22D603B3004E8493 /* PersonFormModel.swift */; };
+		2791C3AE22D6080A004E8493 /* PersonFormFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3AD22D6080A004E8493 /* PersonFormFactory.swift */; };
+		2791C3B022D60F3E004E8493 /* PreparePersonFormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3AF22D60F3E004E8493 /* PreparePersonFormPresenter.swift */; };
+		2791C3B222D60F56004E8493 /* PreparePersonFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3B122D60F56004E8493 /* PreparePersonFormController.swift */; };
+		2791C3B422D61057004E8493 /* PreparePersonFormFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3B322D61057004E8493 /* PreparePersonFormFactory.swift */; };
+		2791C3B622D6134E004E8493 /* SubmitPersonFormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3B522D6134E004E8493 /* SubmitPersonFormPresenter.swift */; };
+		2791C3BA22D6193F004E8493 /* SubmitPersonFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3B922D6193F004E8493 /* SubmitPersonFormModel.swift */; };
+		2791C3BC22D61AEB004E8493 /* SubmitPersonFormFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3BB22D61AEB004E8493 /* SubmitPersonFormFactory.swift */; };
+		2791C3BE22D61CC6004E8493 /* CreatePersonFeatureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3BD22D61CC6004E8493 /* CreatePersonFeatureFactory.swift */; };
+		2791C3C022D61D79004E8493 /* UpdatePersonFeatureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2791C3BF22D61D79004E8493 /* UpdatePersonFeatureFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +159,25 @@
 		276ECAA422CE1A5300D9B822 /* GetPersonDetailsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonDetailsGateway.swift; sourceTree = "<group>"; };
 		276ECAA622CE1C5E00D9B822 /* GetPersonsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonsGateway.swift; sourceTree = "<group>"; };
 		276ECAA822CE1F7300D9B822 /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		2791C39122D5FC77004E8493 /* PersonFormModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFormModule.swift; sourceTree = "<group>"; };
+		2791C39322D5FC90004E8493 /* PersonFormUserInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFormUserInterface.swift; sourceTree = "<group>"; };
+		2791C39522D5FCA5004E8493 /* PersonFormWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFormWireframe.swift; sourceTree = "<group>"; };
+		2791C39922D5FCDF004E8493 /* PersonFormLocalizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFormLocalizing.swift; sourceTree = "<group>"; };
+		2791C39B22D5FCF0004E8493 /* PersonFormViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFormViewData.swift; sourceTree = "<group>"; };
+		2791C3A322D5FE8A004E8493 /* PersonFormViewDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFormViewDataFactory.swift; sourceTree = "<group>"; };
+		2791C3A522D5FF0A004E8493 /* PersonFormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFormPresenter.swift; sourceTree = "<group>"; };
+		2791C3A722D5FF19004E8493 /* PersonFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFormController.swift; sourceTree = "<group>"; };
+		2791C3A922D5FF79004E8493 /* PersonFormTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFormTypes.swift; sourceTree = "<group>"; };
+		2791C3AB22D603B3004E8493 /* PersonFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFormModel.swift; sourceTree = "<group>"; };
+		2791C3AD22D6080A004E8493 /* PersonFormFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFormFactory.swift; sourceTree = "<group>"; };
+		2791C3AF22D60F3E004E8493 /* PreparePersonFormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparePersonFormPresenter.swift; sourceTree = "<group>"; };
+		2791C3B122D60F56004E8493 /* PreparePersonFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparePersonFormController.swift; sourceTree = "<group>"; };
+		2791C3B322D61057004E8493 /* PreparePersonFormFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparePersonFormFactory.swift; sourceTree = "<group>"; };
+		2791C3B522D6134E004E8493 /* SubmitPersonFormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitPersonFormPresenter.swift; sourceTree = "<group>"; };
+		2791C3B922D6193F004E8493 /* SubmitPersonFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitPersonFormModel.swift; sourceTree = "<group>"; };
+		2791C3BB22D61AEB004E8493 /* SubmitPersonFormFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitPersonFormFactory.swift; sourceTree = "<group>"; };
+		2791C3BD22D61CC6004E8493 /* CreatePersonFeatureFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePersonFeatureFactory.swift; sourceTree = "<group>"; };
+		2791C3BF22D61D79004E8493 /* UpdatePersonFeatureFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonFeatureFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,33 +251,38 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		275C1AB122D503C8001D9439 /* Form */ = {
+		275C1AB122D503C8001D9439 /* DisplayForm */ = {
 			isa = PBXGroup;
 			children = (
+				2791C39722D5FCC9004E8493 /* ViewData */,
+				2791C3A522D5FF0A004E8493 /* PersonFormPresenter.swift */,
+				2791C3A722D5FF19004E8493 /* PersonFormController.swift */,
+				2791C3AB22D603B3004E8493 /* PersonFormModel.swift */,
+				2791C3AD22D6080A004E8493 /* PersonFormFactory.swift */,
 			);
-			path = Form;
+			path = DisplayForm;
 			sourceTree = "<group>";
 		};
 		275C1AB222D503CF001D9439 /* SubmitForm */ = {
 			isa = PBXGroup;
 			children = (
+				2791C3B522D6134E004E8493 /* SubmitPersonFormPresenter.swift */,
+				2791C3B922D6193F004E8493 /* SubmitPersonFormModel.swift */,
+				2791C3BB22D61AEB004E8493 /* SubmitPersonFormFactory.swift */,
 			);
 			path = SubmitForm;
 			sourceTree = "<group>";
 		};
-		275C1AB322D503D8001D9439 /* List */ = {
+		275C1AB322D503D8001D9439 /* DisplayList */ = {
 			isa = PBXGroup;
 			children = (
 				275C1AC222D50556001D9439 /* ViewData */,
-				275C1AB422D503F3001D9439 /* PersonsListModule.swift */,
-				275C1AB622D50453001D9439 /* PersonsListUserInterface.swift */,
-				275C1AB822D50466001D9439 /* PersonsListWireframe.swift */,
 				275C1ABA22D5048B001D9439 /* PersonsListPresenter.swift */,
 				275C1ABC22D50499001D9439 /* PersonsListController.swift */,
 				275C1ABE22D504A8001D9439 /* PersonsListModel.swift */,
 				275C1AC022D50533001D9439 /* PersonsListFactory.swift */,
 			);
-			path = List;
+			path = DisplayList;
 			sourceTree = "<group>";
 		};
 		275C1AC222D50556001D9439 /* ViewData */ = {
@@ -266,6 +309,9 @@
 		275C1AD422D507E7001D9439 /* PrepareForm */ = {
 			isa = PBXGroup;
 			children = (
+				2791C3AF22D60F3E004E8493 /* PreparePersonFormPresenter.swift */,
+				2791C3B122D60F56004E8493 /* PreparePersonFormController.swift */,
+				2791C3B322D61057004E8493 /* PreparePersonFormFactory.swift */,
 			);
 			path = PrepareForm;
 			sourceTree = "<group>";
@@ -282,6 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				275C1B1C22D51CFA001D9439 /* PersonsListFeatureFactory.swift */,
+				2791C3BD22D61CC6004E8493 /* CreatePersonFeatureFactory.swift */,
+				2791C3BF22D61D79004E8493 /* UpdatePersonFeatureFactory.swift */,
 				275C1B2022D52B64001D9439 /* PersonsInteractorFactory.swift */,
 			);
 			path = Features;
@@ -387,11 +435,9 @@
 			isa = PBXGroup;
 			children = (
 				275C1AD522D509D8001D9439 /* Contexts */,
-				275C1AB322D503D8001D9439 /* List */,
-				275C1AC322D5055E001D9439 /* PrepareList */,
-				275C1AB122D503C8001D9439 /* Form */,
-				275C1AD422D507E7001D9439 /* PrepareForm */,
-				275C1AB222D503CF001D9439 /* SubmitForm */,
+				2791C38E22D5FBAD004E8493 /* List */,
+				2791C38F22D5FBC3004E8493 /* Details */,
+				2791C39022D5FBD0004E8493 /* Form */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -503,6 +549,49 @@
 				276ECAA422CE1A5300D9B822 /* GetPersonDetailsGateway.swift */,
 			);
 			path = Person;
+			sourceTree = "<group>";
+		};
+		2791C38E22D5FBAD004E8493 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				275C1AB322D503D8001D9439 /* DisplayList */,
+				275C1AC322D5055E001D9439 /* PrepareList */,
+				275C1AB422D503F3001D9439 /* PersonsListModule.swift */,
+				275C1AB622D50453001D9439 /* PersonsListUserInterface.swift */,
+				275C1AB822D50466001D9439 /* PersonsListWireframe.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		2791C38F22D5FBC3004E8493 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		2791C39022D5FBD0004E8493 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				275C1AB122D503C8001D9439 /* DisplayForm */,
+				275C1AD422D507E7001D9439 /* PrepareForm */,
+				275C1AB222D503CF001D9439 /* SubmitForm */,
+				2791C3A922D5FF79004E8493 /* PersonFormTypes.swift */,
+				2791C39922D5FCDF004E8493 /* PersonFormLocalizing.swift */,
+				2791C39122D5FC77004E8493 /* PersonFormModule.swift */,
+				2791C39322D5FC90004E8493 /* PersonFormUserInterface.swift */,
+				2791C39522D5FCA5004E8493 /* PersonFormWireframe.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		2791C39722D5FCC9004E8493 /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+				2791C39B22D5FCF0004E8493 /* PersonFormViewData.swift */,
+				2791C3A322D5FE8A004E8493 /* PersonFormViewDataFactory.swift */,
+			);
+			path = ViewData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -629,15 +718,23 @@
 				276ECA7F22CE0C3200D9B822 /* GetPersonsUseCase.swift in Sources */,
 				275C1AB522D503F3001D9439 /* PersonsListModule.swift in Sources */,
 				276ECA9322CE0D8900D9B822 /* PersonsAPI.swift in Sources */,
+				2791C3A422D5FE8A004E8493 /* PersonFormViewDataFactory.swift in Sources */,
 				275C1AD122D5070F001D9439 /* PersonItemsViewData.swift in Sources */,
+				2791C3BC22D61AEB004E8493 /* SubmitPersonFormFactory.swift in Sources */,
 				275C1B1D22D51CFA001D9439 /* PersonsListFeatureFactory.swift in Sources */,
 				275C1AB722D50453001D9439 /* PersonsListUserInterface.swift in Sources */,
+				2791C3B022D60F3E004E8493 /* PreparePersonFormPresenter.swift in Sources */,
 				275C1ACF22D506CD001D9439 /* PersonItemViewData.swift in Sources */,
+				2791C3A822D5FF19004E8493 /* PersonFormController.swift in Sources */,
 				275C1ABD22D50499001D9439 /* PersonsListController.swift in Sources */,
+				2791C3C022D61D79004E8493 /* UpdatePersonFeatureFactory.swift in Sources */,
+				2791C39222D5FC77004E8493 /* PersonFormModule.swift in Sources */,
 				276ECA8822CE0CD200D9B822 /* UpdatePersonUseCase.swift in Sources */,
+				2791C3B422D61057004E8493 /* PreparePersonFormFactory.swift in Sources */,
 				276ECAA922CE1F7300D9B822 /* Email.swift in Sources */,
 				276ECA9D22CE103E00D9B822 /* PersonEvent.swift in Sources */,
 				2755D04022D5A970008B7041 /* PersonsMapper.swift in Sources */,
+				2791C3AC22D603B3004E8493 /* PersonFormModel.swift in Sources */,
 				276ECA9122CE0D6B00D9B822 /* PersonsInteractor.swift in Sources */,
 				276ECA7922CE0BE600D9B822 /* UnvalidatedPerson.swift in Sources */,
 				275C1AD322D50732001D9439 /* PersonItemsViewDataFactory.swift in Sources */,
@@ -645,7 +742,9 @@
 				275C1AB922D50466001D9439 /* PersonsListWireframe.swift in Sources */,
 				275C1ABF22D504A8001D9439 /* PersonsListModel.swift in Sources */,
 				276ECA8622CE0CBE00D9B822 /* CreatePersonUseCase.swift in Sources */,
+				2791C3AA22D5FF79004E8493 /* PersonFormTypes.swift in Sources */,
 				275C1AAC22D4DAC4001D9439 /* Age.swift in Sources */,
+				2791C3BA22D6193F004E8493 /* SubmitPersonFormModel.swift in Sources */,
 				275C1AC922D505CA001D9439 /* PreparePersonsListController.swift in Sources */,
 				276ECAA722CE1C5E00D9B822 /* GetPersonsGateway.swift in Sources */,
 				276ECA9B22CE0F4C00D9B822 /* CreatePersonGateway.swift in Sources */,
@@ -657,12 +756,21 @@
 				276ECAA322CE14D900D9B822 /* PersonValidator.swift in Sources */,
 				276ECA7722CE0BD900D9B822 /* Person.swift in Sources */,
 				275C1AD722D509E4001D9439 /* PersonContext.swift in Sources */,
+				2791C39422D5FC90004E8493 /* PersonFormUserInterface.swift in Sources */,
 				275C1B2C22D52C85001D9439 /* CreatePersonMiddlewareGateway.swift in Sources */,
+				2791C3A222D5FE49004E8493 /* PersonFormLocalizing.swift in Sources */,
 				275C1B2822D52C2F001D9439 /* GetPersonsMiddlewareGateway.swift in Sources */,
+				2791C39622D5FCA5004E8493 /* PersonFormWireframe.swift in Sources */,
+				2791C3AE22D6080A004E8493 /* PersonFormFactory.swift in Sources */,
 				276ECAA522CE1A5300D9B822 /* GetPersonDetailsGateway.swift in Sources */,
+				2791C3B222D60F56004E8493 /* PreparePersonFormController.swift in Sources */,
+				2791C3A622D5FF0A004E8493 /* PersonFormPresenter.swift in Sources */,
+				2791C3B622D6134E004E8493 /* SubmitPersonFormPresenter.swift in Sources */,
 				275C1ACB22D505DC001D9439 /* PreparePersonsListModel.swift in Sources */,
+				2791C3BE22D61CC6004E8493 /* CreatePersonFeatureFactory.swift in Sources */,
 				276ECA8A22CE0CE300D9B822 /* DeletePersonUseCase.swift in Sources */,
 				2755D03E22D5A968008B7041 /* PersonsResponse.swift in Sources */,
+				2791C39C22D5FCF0004E8493 /* PersonFormViewData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,6 +22,15 @@ struct InvalidPersonData: Swift.Error {
     
     var errors: NonEmptyDictionary<Key, ValidationError>
     
+    init?(_ input: Array<(Key, ValidationError)>) {
+        if let head = input.first {
+            let tail = Array(input.dropFirst())
+            self = InvalidPersonData(NonEmptyArray(head, tail))
+        } else {
+            return nil
+        }
+    }
+    
     init(_ input: NonEmptyArray<(Key, ValidationError)>) {
         let head = input.head
         let tail = input.tail
@@ -31,5 +40,9 @@ struct InvalidPersonData: Swift.Error {
             guard errors[pair.0] == nil else { return }
             _ = errors.updateValue(pair.1, forKey: pair.0)
         }
+    }
+    
+    func removed(_ key: Key) -> InvalidPersonData? {
+        return InvalidPersonData(errors.compactMap { $0.key == key ? nil : $0 })
     }
 }
