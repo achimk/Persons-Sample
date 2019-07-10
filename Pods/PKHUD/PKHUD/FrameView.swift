@@ -14,24 +14,20 @@ internal class FrameView: UIVisualEffectView {
 
     internal init() {
         super.init(effect: UIBlurEffect(style: .light))
-        DispatchQueue.main.async {
-            self.commonInit()
-        }
+        commonInit()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        DispatchQueue.main.async {
-            self.commonInit()
-        }
+        commonInit()
     }
 
-    private func commonInit() {
+    fileprivate func commonInit() {
         backgroundColor = UIColor(white: 0.8, alpha: 0.36)
         layer.cornerRadius = 9.0
         layer.masksToBounds = true
 
-        contentView.addSubview(content)
+        contentView.addSubview(self.content)
 
         let offset = 20.0
 
@@ -49,7 +45,7 @@ internal class FrameView: UIVisualEffectView {
         addMotionEffect(group)
     }
 
-    private var _content = UIView()
+    fileprivate var _content = UIView()
     internal var content: UIView {
         get {
             return _content

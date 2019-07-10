@@ -8,7 +8,7 @@ workspace 'Sample'
 
 def ui_pods
     pod 'MaterialComponents', '~> 85.4.0'
-    pod 'PKHUD', '~> 5.0'
+    pod 'PKHUD', '5.2.1'
 end
 
 target 'SampleApp' do
